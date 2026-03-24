@@ -1,0 +1,317 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--color-ivory) 82%, var(--color-peach-soft) 18%) 0%,
+      color-mix(in srgb, var(--color-cream) 78%, var(--color-peach-soft) 22%) 38%,
+      color-mix(in srgb, var(--color-cream) 84%, var(--color-sage) 16%) 100%
+    );
+  backdrop-filter: blur(8px);
+  transition: box-shadow 0.2s ease;
+}
+
+.headerShadow {
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+.inner {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.1rem;
+  border-radius: 0.75rem;
+  background:
+    linear-gradient(
+      120deg,
+      color-mix(in srgb, var(--color-ivory) 80%, var(--color-peach-soft) 20%) 0%,
+      color-mix(in srgb, var(--color-cream) 86%, var(--color-peach-soft) 14%) 52%,
+      color-mix(in srgb, var(--color-ivory) 82%, var(--color-sage) 18%) 100%
+    );
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.55) inset;
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.brandHighlight {
+  color: var(--color-peach);
+}
+
+.desktopNav {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1rem;
+}
+
+.navLink {
+  position: relative;
+  padding: 0.2rem 0.1rem;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: var(--color-peach);
+}
+
+.navLinkActive {
+  color: var(--color-peach);
+  font-weight: 600;
+}
+
+.navLinkActive::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.2rem;
+  height: 2px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, var(--color-peach), var(--color-sage));
+}
+
+.desktopCtaWrap {
+  display: none;
+  justify-self: end;
+}
+
+.ctaButton {
+  border: 0;
+  border-radius: 9999px;
+  background: var(--color-peach);
+  color: var(--color-ink);
+  padding: 0.75rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.ctaButton:hover {
+  background: var(--color-peach-soft);
+}
+
+.mobileMenuButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(44, 40, 37, 0.2);
+  color: var(--color-ink);
+  background: transparent;
+}
+
+.mobileMenuIcon {
+  font-size: 1.125rem;
+  line-height: 1;
+}
+
+.mobilePanel {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background: var(--color-ivory);
+  padding: 1rem;
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.mobileNavLink {
+  border-radius: 0.5rem;
+  padding: 0.55rem 0.75rem;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.mobileNavLink:hover {
+  background: var(--color-cream);
+}
+
+.mobileNavLinkActive {
+  color: var(--color-peach);
+  font-weight: 600;
+  background: color-mix(in srgb, var(--color-peach-soft) 28%, transparent);
+}
+
+.mobileCtaButton {
+  margin-top: 0.5rem;
+  display: inline-flex;
+  width: fit-content;
+  border: 0;
+  border-radius: 9999px;
+  background: var(--color-peach);
+  color: var(--color-ink);
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+}
+
+.modalCard {
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 42rem;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 1rem;
+  background: var(--color-ivory);
+  padding: 1.25rem;
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.2);
+}
+
+.modalHeader {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modalTitle {
+  font-size: 1.875rem;
+  color: var(--color-ink);
+}
+
+.closeButton {
+  border-radius: 9999px;
+  border: 1px solid rgba(44, 40, 37, 0.2);
+  color: var(--color-ink);
+  background: transparent;
+  padding: 0.25rem 0.5rem;
+}
+
+.formGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.fieldLabel {
+  font-size: 0.875rem;
+  color: var(--color-ink);
+}
+
+.fieldControl {
+  margin-top: 0.25rem;
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(44, 40, 37, 0.2);
+  background: var(--color-ivory);
+  padding: 0.5rem 0.75rem;
+  outline: none;
+}
+
+.fieldControl:focus {
+  box-shadow: 0 0 0 2px rgba(232, 168, 152, 0.8);
+}
+
+.fullWidth {
+  grid-column: span 1;
+}
+
+.submitButton {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  border: 0;
+  border-radius: 9999px;
+  background: var(--color-ink);
+  color: var(--color-ivory);
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.submitButton:hover {
+  background: var(--color-ink-soft);
+}
+
+.toast {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 50;
+  border-radius: 0.75rem;
+  background: var(--color-ink);
+  color: var(--color-ivory);
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 640px) {
+  .inner {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .modalCard {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .row {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .desktopNav {
+    display: flex;
+    justify-self: center;
+  }
+
+  .desktopCtaWrap {
+    display: block;
+    justify-self: end;
+  }
+
+  .mobileMenuButton {
+    display: none;
+  }
+
+  .mobilePanel {
+    display: none;
+  }
+
+  .formGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fullWidth {
+    grid-column: span 2;
+  }
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "_note": "// TODO: Replace with real content",
+    "id": "service-01",
+    "emoji": "🧠",
+    "title": "Developmental Pediatrics",
+    "shortDescription": "Comprehensive assessment of growth, learning, and behavior.",
+    "fullDescription": "We evaluate developmental milestones and design individualized care plans to support communication, learning, and emotional development."
+  },
+  {
+    "id": "service-02",
+    "emoji": "🗣️",
+    "title": "Speech Therapy",
+    "shortDescription": "Improving speech clarity, language, and social communication.",
+    "fullDescription": "Our speech-language therapists help children strengthen expressive and receptive language, articulation, and functional communication in daily life."
+  },
+  {
+    "id": "service-03",
+    "emoji": "🖐️",
+    "title": "Occupational Therapy",
+    "shortDescription": "Support for sensory, motor, and daily living skills.",
+    "fullDescription": "We work on fine motor control, sensory integration, and self-care routines that improve confidence at home and school."
+  },
+  {
+    "id": "service-04",
+    "emoji": "🏃",
+    "title": "Physiotherapy",
+    "shortDescription": "Strength, posture, mobility, and movement training.",
+    "fullDescription": "Therapy sessions focus on gross motor skills, balance, gait, and muscle coordination for children with developmental or neuromotor challenges."
+  },
+  {
+    "id": "service-05",
+    "emoji": "🧩",
+    "title": "Behavior Therapy",
+    "shortDescription": "Structured behavior plans for positive outcomes.",
+    "fullDescription": "Using child-friendly methods, we address behavior concerns, improve attention, and build adaptive skills through consistent reinforcement strategies."
+  },
+  {
+    "id": "service-06",
+    "emoji": "🎓",
+    "title": "Special Education",
+    "shortDescription": "Personalized learning support and academic readiness.",
+    "fullDescription": "Our educators tailor instruction to each child, focusing on foundational literacy, numeracy, and classroom participation skills."
+  },
+  {
+    "id": "service-07",
+    "emoji": "👶",
+    "title": "Early Intervention",
+    "shortDescription": "Therapy and coaching for children 0-6 years.",
+    "fullDescription": "Early, targeted support helps children build critical developmental abilities during the most responsive years of brain growth."
+  },
+  {
+    "id": "service-08",
+    "emoji": "🧪",
+    "title": "Diagnostic Screening",
+    "shortDescription": "Standardized developmental and functional assessments.",
+    "fullDescription": "We perform screening and profile-based evaluations to identify strengths, risks, and intervention priorities accurately."
+  },
+  {
+    "id": "service-09",
+    "emoji": "👨‍👩‍👧",
+    "title": "Parent Counselling",
+    "shortDescription": "Practical strategies for home and routine management.",
+    "fullDescription": "We guide parents with actionable tools to support communication, regulation, and learning through everyday interactions."
+  },
+  {
+    "id": "service-10",
+    "emoji": "🏫",
+    "title": "School Readiness Program",
+    "shortDescription": "Building skills for successful classroom transitions.",
+    "fullDescription": "Children develop attention, pre-academics, peer interaction, and independence skills needed for school settings."
+  },
+  {
+    "id": "service-11",
+    "emoji": "🤝",
+    "title": "Group Therapy",
+    "shortDescription": "Peer-based sessions for social and communication growth.",
+    "fullDescription": "Small-group activities help children practice turn-taking, collaboration, and emotional regulation in guided social contexts."
+  },
+  {
+    "id": "service-12",
+    "emoji": "🧑‍⚕️",
+    "title": "Neurology Follow-up",
+    "shortDescription": "Ongoing review for neurological developmental concerns.",
+    "fullDescription": "Regular follow-ups track developmental progress, response to interventions, and evolving clinical recommendations."
+  },
+  {
+    "id": "service-13",
+    "emoji": "📋",
+    "title": "Comprehensive Care Planning",
+    "shortDescription": "Integrated plans across therapies and specialists.",
+    "fullDescription": "Our multidisciplinary team aligns goals, timelines, and home programs so children receive coordinated, measurable support."
+  }
+]

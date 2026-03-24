@@ -1,0 +1,31 @@
+[
+  {
+    "_note": "// TODO: Replace with real content",
+    "name": "Neha S.",
+    "childAge": "4 years",
+    "service": "Speech Therapy",
+    "quote": "We noticed clear improvement in communication within weeks. The therapist also taught us what to do at home.",
+    "rating": 5
+  },
+  {
+    "name": "Amit R.",
+    "childAge": "6 years",
+    "service": "Occupational Therapy",
+    "quote": "Our child is more independent with daily tasks and school routines. The sessions are practical and encouraging.",
+    "rating": 5
+  },
+  {
+    "name": "Shreya P.",
+    "childAge": "3 years",
+    "service": "Early Intervention",
+    "quote": "The team gave us a clear roadmap and regular feedback. We felt supported through every step.",
+    "rating": 4
+  },
+  {
+    "name": "Karan T.",
+    "childAge": "7 years",
+    "service": "Behavior Therapy",
+    "quote": "The behavior strategies were simple to follow and made a big difference at home and in class.",
+    "rating": 5
+  }
+]

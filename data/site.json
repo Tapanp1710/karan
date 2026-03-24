@@ -1,0 +1,80 @@
+{
+  "_note": "// TODO: Replace with real content",
+  "clinicName": "Vathsalya Child Neuro & Nurture Center",
+  "brandPrefix": "Vathsalya",
+  "brandHighlight": "CNNC",
+  "tagline": "Nurturing every child with compassionate, evidence-based care.",
+  "logoPath": "/logo.png",
+  "favicon": "/favicon.ico",
+  "ogImage": "/images/hero/hero-1.jpg",
+  "metadataTitle": "Vathsalya CNNC | Child Development and Therapy Center",
+  "seoDescription": "Vathsalya CNNC provides pediatric developmental support, therapy services, and family-centered care.",
+  "whatsAppNumber": "+919900001234",
+  "sectionTitles": {
+    "services": "Our Clinical Services",
+    "team": "Our Team",
+    "gallery": "Gallery",
+    "testimonials": "What Families Say",
+    "book": "Book an Appointment",
+    "contact": "Contact Us"
+  },
+  "gallery": {
+    "allFilterLabel": "all"
+  },
+  "navbar": {
+    "bookCta": "Book Appointment",
+    "mobileMenuAriaLabel": "Toggle menu",
+    "homeHref": "/",
+    "bookHref": "#book"
+  },
+  "footer": {
+    "quickLinksTitle": "Quick Links",
+    "contactTitle": "Contact",
+    "followTitle": "Follow Us",
+    "whatsAppCtaLabel": "WhatsApp Chat",
+    "copyrightLine": "All rights reserved."
+  },
+  "bookingForm": {
+    "description": "Fill in your details and continue on WhatsApp to confirm your consultation slot.",
+    "fields": {
+      "fullName": "Full Name",
+      "phoneNumber": "Phone Number",
+      "childAge": "Child's Age",
+      "service": "Service",
+      "preferredDate": "Preferred Date",
+      "additionalNotes": "Additional Notes",
+      "servicePlaceholder": "Select a service",
+      "childAgePlaceholder": "e.g. 4 years"
+    },
+    "submitButton": "Continue on WhatsApp",
+    "toastSuccess": "WhatsApp opened successfully.",
+    "messageTemplate": {
+      "title": "New Appointment Request",
+      "fullName": "Full Name",
+      "phoneNumber": "Phone Number",
+      "childAge": "Child's Age",
+      "service": "Service",
+      "preferredDate": "Preferred Date",
+      "additionalNotes": "Additional Notes",
+      "emptyNotesFallback": "N/A"
+    }
+  },
+  "navLinks": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Gallery",
+      "href": "/gallery"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ]
+}

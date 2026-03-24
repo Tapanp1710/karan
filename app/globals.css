@@ -1,27 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-cream: #f3eee4;
+  --color-ivory: #faf6ef;
+  --color-peach: #dfa287;
+  --color-peach-soft: #efc7b2;
+  --color-sage: #98a06a;
+  --color-sage-deep: #7f8a58;
+  --color-taupe: #b7a995;
+  --color-ink: #5f5149;
+  --color-ink-soft: #7a6a61;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--color-cream);
+  color: var(--color-ink);
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .font-cormorant {
+    font-family: "Cormorant Garamond", serif;
+  }
+
+  .leaf-float {
+    animation: leafFloat 5s ease-in-out infinite;
+  }
+
+  .leaf-float-delayed {
+    animation: leafFloat 6s ease-in-out 0.7s infinite;
+  }
+
+  .reveal-section {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    will-change: opacity, transform;
+  }
+
+  .reveal-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes leafFloat {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(6deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
   }
 }

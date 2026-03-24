@@ -1,0 +1,24 @@
+[
+  {
+    "_note": "// TODO: Replace with real content",
+    "name": "Dr. Ananya Rao",
+    "role": "Developmental Pediatrician",
+    "qualification": "MD Pediatrics, Fellowship in Developmental Medicine",
+    "bio": "Dr. Ananya leads interdisciplinary case planning and focuses on early diagnosis and long-term developmental follow-up.",
+    "imagePath": "/images/team/placeholder.jpg"
+  },
+  {
+    "name": "Mr. Rohan Mehta",
+    "role": "Senior Occupational Therapist",
+    "qualification": "MOT, Certified Sensory Integration Practitioner",
+    "bio": "Rohan works with children on sensory processing, motor planning, and self-help routines for better day-to-day functioning.",
+    "imagePath": "/images/team/placeholder.jpg"
+  },
+  {
+    "name": "Ms. Isha Nair",
+    "role": "Speech and Language Therapist",
+    "qualification": "MASLP, Pediatric Communication Specialist",
+    "bio": "Isha supports children in language development, articulation, and social communication through play-based intervention.",
+    "imagePath": "/images/team/placeholder.jpg"
+  }
+]

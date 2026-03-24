@@ -1,0 +1,103 @@
+.footer {
+  margin-top: 4rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--color-ivory);
+  padding: 3rem 0;
+}
+
+.grid {
+  width: 100%;
+  max-width: 72rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.brand {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.brandHighlight {
+  color: var(--color-peach);
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: rgba(44, 40, 37, 0.8);
+}
+
+.sectionHeading {
+  font-size: 1.5rem;
+}
+
+.infoList {
+  margin-top: 0.75rem;
+  display: grid;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: rgba(44, 40, 37, 0.85);
+}
+
+.inlineLink {
+  transition: color 0.2s ease;
+}
+
+.inlineLink:hover {
+  color: var(--color-peach);
+}
+
+.socialRow {
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.socialIconLink {
+  border-radius: 9999px;
+  border: 1px solid rgba(44, 40, 37, 0.2);
+  padding: 0.5rem;
+  color: var(--color-ink);
+  transition: background-color 0.2s ease;
+}
+
+.socialIconLink:hover {
+  background: var(--color-cream);
+}
+
+.socialIconSvg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: currentColor;
+}
+
+.bottomBar {
+  width: 100%;
+  max-width: 72rem;
+  margin: 2rem auto 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.25rem 1rem 0;
+  font-size: 0.875rem;
+  color: rgba(44, 40, 37, 0.7);
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0 1.5rem;
+  }
+
+  .bottomBar {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

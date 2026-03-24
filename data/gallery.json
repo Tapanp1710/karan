@@ -1,0 +1,51 @@
+[
+  {
+    "_note": "// TODO: Replace with real content",
+    "id": "gallery-01",
+    "imagePath": "/images/gallery/placeholder-1.jpg",
+    "caption": "Sensory integration activity room",
+    "category": "therapy"
+  },
+  {
+    "id": "gallery-02",
+    "imagePath": "/images/gallery/placeholder-2.jpg",
+    "caption": "Parent counselling corner",
+    "category": "facility"
+  },
+  {
+    "id": "gallery-03",
+    "imagePath": "/images/gallery/placeholder-3.jpg",
+    "caption": "Fine motor training session",
+    "category": "therapy"
+  },
+  {
+    "id": "gallery-04",
+    "imagePath": "/images/gallery/placeholder-4.jpg",
+    "caption": "Team workshop on child communication",
+    "category": "events"
+  },
+  {
+    "id": "gallery-05",
+    "imagePath": "/images/gallery/placeholder-5.jpg",
+    "caption": "Play-based speech therapy",
+    "category": "therapy"
+  },
+  {
+    "id": "gallery-06",
+    "imagePath": "/images/gallery/placeholder-6.jpg",
+    "caption": "Reception and waiting lounge",
+    "category": "facility"
+  },
+  {
+    "id": "gallery-07",
+    "imagePath": "/images/gallery/placeholder-7.jpg",
+    "caption": "Community awareness camp",
+    "category": "events"
+  },
+  {
+    "id": "gallery-08",
+    "imagePath": "/images/gallery/placeholder-8.jpg",
+    "caption": "School readiness group activity",
+    "category": "therapy"
+  }
+]
