@@ -1,0 +1,422 @@
+.page {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 5rem;
+}
+
+/* ── Breadcrumb ──────────────────────── */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.breadcrumbLink {
+  color: var(--color-sage);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.breadcrumbLink:hover { color: var(--color-sage-deep); }
+.breadcrumbSep { color: var(--color-taupe); }
+.breadcrumbCurrent { color: var(--color-ink); font-weight: 500; }
+
+/* ── Hero ────────────────────────────── */
+.hero {
+  background: linear-gradient(135deg,
+    rgba(242, 196, 184, 0.18) 0%,
+    rgba(138, 154, 106, 0.1) 100%);
+  border: 1px solid rgba(232, 168, 152, 0.25);
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem;
+  margin-bottom: 1.75rem;
+}
+
+.heroInner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.heroEmoji {
+  font-size: 4rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  color: var(--color-ink);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.heroShort {
+  font-size: 1.05rem;
+  color: var(--color-ink-soft);
+  line-height: 1.6;
+  max-width: 48rem;
+}
+
+/* ── Key Highlights ──────────────────── */
+.keyPoints {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.keyPoint {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--color-ivory);
+  border: 1px solid rgba(176, 168, 154, 0.3);
+  border-radius: 0.875rem;
+  padding: 0.875rem 1.1rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.keyPoint:hover {
+  box-shadow: 0 4px 16px rgba(232, 168, 152, 0.2);
+}
+
+.keyPointIcon {
+  font-size: 1.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.keyPointLabel {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-ink);
+}
+
+/* ── Two-column grid ─────────────────── */
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* ── Main column ─────────────────────── */
+.mainCol {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section {
+  background: var(--color-ivory);
+  border-radius: 1rem;
+  padding: 1.75rem;
+  border-left: 4px solid var(--color-peach);
+  box-shadow: 0 2px 12px rgba(232, 168, 152, 0.08);
+}
+
+.sectionHeading {
+  font-size: 1.6rem;
+  color: var(--color-ink);
+  margin-bottom: 0.875rem;
+}
+
+.bodyText {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: rgba(44, 40, 37, 0.88);
+}
+
+/* ── Side column ─────────────────────── */
+.sideCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sideCard {
+  background: var(--color-cream);
+  border: 1px solid rgba(176, 168, 154, 0.3);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.sideCardHeading {
+  font-size: 1.4rem;
+  color: var(--color-ink);
+  margin-bottom: 1rem;
+}
+
+/* Benefits list */
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.benefitItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+  color: rgba(44, 40, 37, 0.9);
+  line-height: 1.5;
+}
+
+.benefitCheck {
+  flex-shrink: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: var(--color-sage);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  margin-top: 0.1rem;
+}
+
+/* Condition tags */
+.conditionTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.conditionTag {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+  background: rgba(232, 168, 152, 0.18);
+  border: 1px solid rgba(232, 168, 152, 0.35);
+  color: var(--color-ink);
+  font-weight: 500;
+}
+
+/* Side CTA */
+.sideCta {
+  background: linear-gradient(135deg, var(--color-peach) 0%, var(--color-peach-soft) 100%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.sideCtaHeading {
+  font-size: 1.5rem;
+  color: var(--color-ink);
+}
+
+.sideCtaText {
+  font-size: 0.825rem;
+  color: rgba(44, 40, 37, 0.82);
+  line-height: 1.55;
+}
+
+.sideCtaButton {
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 9999px;
+  background: var(--color-ink);
+  color: var(--color-ivory);
+  padding: 0.65rem 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin-top: 0.25rem;
+}
+
+.sideCtaButton:hover {
+  background: var(--color-ink-soft);
+  transform: translateY(-2px);
+}
+
+.sideCtaSecondary {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: rgba(44, 40, 37, 0.7);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sideCtaSecondary:hover { color: var(--color-ink); }
+
+/* ── Full-width CTA banner ───────────── */
+.ctaBanner {
+  background: linear-gradient(120deg,
+    var(--color-sage) 0%,
+    var(--color-sage-deep) 100%);
+  border-radius: 1.5rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
+
+.ctaBannerInner {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.ctaHeading {
+  font-size: 2.2rem;
+  color: var(--color-ivory);
+  margin-bottom: 0.75rem;
+}
+
+.ctaSub {
+  font-size: 0.95rem;
+  color: rgba(250, 246, 239, 0.88);
+  max-width: 36rem;
+  margin: 0 auto 1.75rem;
+  line-height: 1.65;
+}
+
+.ctaButtons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.ctaButtonPrimary {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  background: var(--color-ivory);
+  color: var(--color-ink);
+  padding: 0.75rem 1.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ctaButtonPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.ctaButtonSecondary {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  background: transparent;
+  border: 2px solid rgba(250, 246, 239, 0.7);
+  color: var(--color-ivory);
+  padding: 0.75rem 1.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.ctaButtonSecondary:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* ── Related services ────────────────── */
+.relatedSection {
+  margin-top: 0.5rem;
+}
+
+.relatedHeading {
+  font-size: 2rem;
+  color: var(--color-ink);
+  margin-bottom: 1.25rem;
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.relatedCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.25rem;
+  border-radius: 0.875rem;
+  background: var(--color-ivory);
+  border: 1px solid rgba(176, 168, 154, 0.3);
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+.relatedCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(232, 168, 152, 0.25);
+  border-color: var(--color-peach-soft);
+}
+
+.relatedEmoji { font-size: 1.5rem; line-height: 1; }
+
+.relatedTitle {
+  font-size: 1.25rem;
+  color: var(--color-ink);
+}
+
+.relatedDesc {
+  font-size: 0.8rem;
+  color: var(--color-ink-soft);
+  line-height: 1.55;
+  flex: 1;
+}
+
+.relatedCta {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-peach);
+  margin-top: 0.35rem;
+  transition: color 0.2s ease;
+}
+
+.relatedCard:hover .relatedCta { color: var(--color-sage-deep); }
+
+.allServicesLink {
+  text-align: center;
+}
+
+.allServicesLink a {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-peach);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: color 0.2s ease;
+}
+
+.allServicesLink a:hover { color: var(--color-sage-deep); }
+
+/* ── Responsive ────────────────────── */
+@media (min-width: 640px) {
+  .page { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .heroTitle { font-size: 3.25rem; }
+  .keyPoints { grid-template-columns: repeat(4, 1fr); }
+  .relatedGrid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .contentGrid {
+    grid-template-columns: 1fr 360px;
+    align-items: start;
+  }
+  .sideCol {
+    position: sticky;
+    top: 5.5rem;
+  }
+}

@@ -1,6 +1,7 @@
 import contactDataShape from "@/data/contact.json";
 import siteDataShape from "@/data/site.json";
 import Image from "next/image";
+import FooterLegal from "./FooterLegal";
 import styles from "./Footer.module.css";
 
 type SiteData = typeof siteDataShape;
@@ -112,6 +113,8 @@ export default function Footer({ siteData, contactData }: FooterProps) {
           </div>
         </div>
       </div>
+
+      <FooterLegal />
 
       <div className={styles.bottomBar}>
         <p>© {currentYear} {siteData.clinicName}. {siteData.footer.copyrightLine}</p>

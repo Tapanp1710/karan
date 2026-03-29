@@ -1,94 +1,424 @@
 [
   {
-    "_note": "// TODO: Replace with real content",
     "id": "service-01",
     "emoji": "🧠",
     "title": "Developmental Pediatrics",
     "shortDescription": "Comprehensive assessment of growth, learning, and behavior.",
-    "fullDescription": "We evaluate developmental milestones and design individualized care plans to support communication, learning, and emotional development."
+    "fullDescription": "Developmental Pediatrics at Vathsalya CNNC provides expert evaluation of your child's developmental milestones across all domains — cognitive, language, motor, social, and emotional. Our specialist pediatricians take a holistic, child-centered approach to understanding each child's unique profile, then design individualized care plans that support communication, learning, and emotional growth.",
+    "whoItHelps": "Children of all ages who show delays or difficulties in reaching developmental milestones, including those with concerns around language development, learning difficulties, behavioral challenges, attention deficits, autism spectrum traits, intellectual disabilities, or global developmental delay.",
+    "whatToExpect": "Your first visit involves a thorough history-taking session, followed by structured observational assessments. Our pediatrician reviews medical records, developmental history, and may coordinate with other specialists. You will receive a detailed written report with diagnosis (if applicable), recommendations, and an individualized intervention plan.",
+    "benefits": [
+      "Accurate identification of developmental strengths and challenges",
+      "Personalized care plans tailored to your child's needs",
+      "Early diagnosis leading to faster, more effective intervention",
+      "Coordination across therapy disciplines for holistic support",
+      "Guidance for parents on how to support development at home",
+      "Regular progress tracking and plan adjustments"
+    ],
+    "conditions": [
+      "Global Developmental Delay",
+      "Autism Spectrum Disorder (ASD)",
+      "Attention Deficit Hyperactivity Disorder (ADHD)",
+      "Intellectual Disability",
+      "Learning Disabilities",
+      "Language & Communication Delays",
+      "Behavioral & Emotional Difficulties"
+    ],
+    "keyPoints": [
+      { "icon": "🔍", "label": "Comprehensive multi-domain assessment" },
+      { "icon": "📝", "label": "Individualized written care plans" },
+      { "icon": "🤝", "label": "Multidisciplinary team coordination" },
+      { "icon": "📈", "label": "Ongoing progress monitoring" }
+    ]
   },
   {
     "id": "service-02",
     "emoji": "🗣️",
     "title": "Speech Therapy",
     "shortDescription": "Improving speech clarity, language, and social communication.",
-    "fullDescription": "Our speech-language therapists help children strengthen expressive and receptive language, articulation, and functional communication in daily life."
+    "fullDescription": "Our Speech-Language Therapy program addresses a wide spectrum of communication challenges in children. Our qualified speech-language therapists work on expressive language (speaking and expressing ideas), receptive language (understanding what is said), articulation and phonology, fluency, voice, and pragmatic or social communication. Sessions are play-based and engaging, making therapy enjoyable for children while achieving meaningful communication goals.",
+    "whoItHelps": "Children who struggle to express themselves verbally, have difficulty understanding spoken language, show unclear speech, have limited vocabulary for their age, stutter or have fluency concerns, or find social communication challenging, including those with ASD, hearing impairment, cerebral palsy, or late talkers.",
+    "whatToExpect": "The therapist begins with a standardized assessment to understand the child's current communication profile. Therapy sessions are structured but flexible, using play, pictures, stories, and interactive activities. Parents are actively involved and receive home practice strategies to reinforce progress between sessions.",
+    "benefits": [
+      "Improved clarity and intelligibility of speech",
+      "Stronger expressive and receptive language skills",
+      "Better social communication and peer interaction",
+      "Increased confidence in verbal expression",
+      "Support for non-verbal communication (AAC) when needed",
+      "Family coaching to support communication at home"
+    ],
+    "conditions": [
+      "Language Delay or Disorder",
+      "Articulation & Phonological Disorders",
+      "Autism Spectrum Disorder (ASD)",
+      "Stuttering / Fluency Disorders",
+      "Hearing Impairment",
+      "Apraxia of Speech",
+      "Selective Mutism",
+      "Cerebral Palsy"
+    ],
+    "keyPoints": [
+      { "icon": "🎭", "label": "Play-based, child-friendly sessions" },
+      { "icon": "👂", "label": "Receptive & expressive language focus" },
+      { "icon": "📱", "label": "AAC support when required" },
+      { "icon": "🏠", "label": "Home practice plans for families" }
+    ]
   },
   {
     "id": "service-03",
     "emoji": "🖐️",
     "title": "Occupational Therapy",
     "shortDescription": "Support for sensory, motor, and daily living skills.",
-    "fullDescription": "We work on fine motor control, sensory integration, and self-care routines that improve confidence at home and school."
+    "fullDescription": "Occupational Therapy at Vathsalya CNNC helps children participate more fully in everyday activities — from dressing and feeding to writing and playing. Our occupational therapists focus on fine motor skill development, sensory processing and integration, visual-motor coordination, self-care independence, and school-readiness skills. We create a sensory-rich, safe environment where children can explore, process, and grow.",
+    "whoItHelps": "Children who experience difficulty with fine motor tasks (holding a pencil, buttoning clothes), show over- or under-sensitivity to sensory input (sound, touch, movement), struggle with self-care routines, have poor handwriting, difficulty concentrating, or have diagnoses such as DCD, sensory processing disorder, ASD, or ADHD.",
+    "whatToExpect": "Assessment covers fine motor, gross motor, sensory processing, visual-perceptual skills, and activities of daily living. Therapy sessions use purposeful, meaningful activities in a stimulating environment — including sensory equipment, creative tasks, and skill-based play. Therapists collaborate closely with parents and teachers.",
+    "benefits": [
+      "Improved fine motor control for writing and self-care",
+      "Better sensory regulation and reduced sensory meltdowns",
+      "Greater independence in daily routines",
+      "Enhanced focus and attention in structured settings",
+      "Visual-motor and handwriting improvement",
+      "Increased confidence and self-esteem"
+    ],
+    "conditions": [
+      "Sensory Processing Disorder",
+      "Developmental Coordination Disorder (DCD)",
+      "Autism Spectrum Disorder (ASD)",
+      "ADHD",
+      "Cerebral Palsy",
+      "Down Syndrome",
+      "Handwriting & Fine Motor Delays",
+      "Post-surgical Rehabilitation"
+    ],
+    "keyPoints": [
+      { "icon": "🎨", "label": "Sensory-rich therapy environment" },
+      { "icon": "✍️", "label": "Handwriting & fine motor focus" },
+      { "icon": "🧸", "label": "Play-based purposeful activities" },
+      { "icon": "🏠", "label": "Daily living skills independence" }
+    ]
   },
   {
     "id": "service-04",
     "emoji": "🏃",
     "title": "Physiotherapy",
     "shortDescription": "Strength, posture, mobility, and movement training.",
-    "fullDescription": "Therapy sessions focus on gross motor skills, balance, gait, and muscle coordination for children with developmental or neuromotor challenges."
+    "fullDescription": "Our Pediatric Physiotherapy service targets gross motor skill development and neuromotor rehabilitation. Our physiotherapists assess and treat challenges related to muscle tone, strength, balance, coordination, gait, and posture. We design individualized movement programs that help children build physical confidence and independence, using evidence-based techniques adapted for child-friendly, enjoyable sessions.",
+    "whoItHelps": "Children with gross motor delays, movement difficulties, abnormal muscle tone (high or low), gait abnormalities, balance problems, cerebral palsy, Down syndrome, muscular dystrophy, post-injury recovery needs, or those recovering from orthopedic procedures.",
+    "whatToExpect": "Initial physiotherapy assessment includes observation of movement quality, muscle tone testing, range-of-motion assessment, balance and coordination evaluation, and functional mobility review. Therapy sessions use exercise, specialized equipment, and movement-based play to meet targeted physical goals. Home exercise programs are provided to families.",
+    "benefits": [
+      "Improved gross motor milestones and movement quality",
+      "Better balance, coordination, and gait patterns",
+      "Increased core strength and postural stability",
+      "Pain reduction and improved physical function",
+      "Greater participation in physical activities and sports",
+      "Home exercise programs for continued progress"
+    ],
+    "conditions": [
+      "Cerebral Palsy",
+      "Down Syndrome",
+      "Gross Motor Developmental Delay",
+      "Hypotonia / Hypertonia",
+      "Gait & Balance Disorders",
+      "Muscular Dystrophy",
+      "Spina Bifida",
+      "Post-Surgical Rehabilitation",
+      "Torticollis"
+    ],
+    "keyPoints": [
+      { "icon": "💪", "label": "Strength & muscle tone programs" },
+      { "icon": "⚖️", "label": "Balance & coordination training" },
+      { "icon": "🦶", "label": "Gait analysis & correction" },
+      { "icon": "🏋️", "label": "Home exercise programs" }
+    ]
   },
   {
     "id": "service-05",
     "emoji": "🧩",
     "title": "Behavior Therapy",
     "shortDescription": "Structured behavior plans for positive outcomes.",
-    "fullDescription": "Using child-friendly methods, we address behavior concerns, improve attention, and build adaptive skills through consistent reinforcement strategies."
+    "fullDescription": "Behavior Therapy at Vathsalya CNNC uses evidence-based, child-affirming approaches — including Applied Behavior Analysis (ABA), Positive Behavior Support (PBS), and Cognitive Behavior Therapy (CBT) principles — to help children understand and manage their behaviors. We work on improving attention, reducing challenging behaviors, building adaptive skills, and strengthening emotional regulation in a safe, structured environment.",
+    "whoItHelps": "Children with behavioral challenges such as aggression, self-injury, tantrums, non-compliance, impulsivity, or difficulty following routines. Also highly effective for children with ASD, ADHD, intellectual disabilities, anxiety, or trauma histories who benefit from structured behavioral support.",
+    "whatToExpect": "The therapist conducts a functional behavior assessment (FBA) to understand the triggers and functions of behavior. A tailored behavior support plan is developed with measurable goals. Sessions involve structured activities, positive reinforcement strategies, and skill-building exercises. Parents receive in-depth coaching to implement strategies consistently at home.",
+    "benefits": [
+      "Reduction in challenging or harmful behaviors",
+      "Improved attention, focus, and task completion",
+      "Stronger emotional regulation and coping skills",
+      "Development of replacement/adaptive behaviors",
+      "Better compliance with daily routines",
+      "Parent empowerment with practical behavioral strategies"
+    ],
+    "conditions": [
+      "Autism Spectrum Disorder (ASD)",
+      "ADHD",
+      "Oppositional Defiant Disorder (ODD)",
+      "Intellectual Disability",
+      "Anxiety Disorders",
+      "Trauma & PTSD",
+      "Self-Injurious Behavior",
+      "Conduct Disorders"
+    ],
+    "keyPoints": [
+      { "icon": "📊", "label": "Functional behavior assessment" },
+      { "icon": "✅", "label": "Positive reinforcement strategies" },
+      { "icon": "🎯", "label": "Measurable, goal-directed plans" },
+      { "icon": "👨‍👩‍👧", "label": "Intensive parent coaching" }
+    ]
   },
   {
     "id": "service-06",
     "emoji": "🎓",
     "title": "Special Education",
     "shortDescription": "Personalized learning support and academic readiness.",
-    "fullDescription": "Our educators tailor instruction to each child, focusing on foundational literacy, numeracy, and classroom participation skills."
+    "fullDescription": "Our Special Education service provides individualized learning support for children who require modified or specialized instructional approaches to access academic content. Our trained special educators assess each child's learning profile and design structured, multi-sensory lesson plans that address literacy, numeracy, attention, and classroom participation. We bridge the gap between therapy and academic achievement.",
+    "whoItHelps": "Children with learning disabilities (dyslexia, dyscalculia, dysgraphia), intellectual disabilities, autism, ADHD, language-based learning difficulties, or any child who struggles to keep pace with standard classroom curriculum despite adequate intelligence and effort.",
+    "whatToExpect": "Assessment of academic skills (reading, writing, math), attention, processing speed, and learning style. Individualized instruction sessions use multi-sensory methods, visual supports, structured literacy programs, and adapted materials. Regular progress reports are shared with parents and can be coordinated with the child's school.",
+    "benefits": [
+      "Personalized learning plans based on individual needs",
+      "Improved reading, writing, and mathematical skills",
+      "Enhanced academic confidence and self-esteem",
+      "Structured multi-sensory teaching approaches",
+      "School collaboration and IEP support",
+      "Strategies to overcome specific learning barriers"
+    ],
+    "conditions": [
+      "Dyslexia & Reading Disorders",
+      "Dyscalculia",
+      "Dysgraphia",
+      "Intellectual Disability",
+      "Autism Spectrum Disorder (ASD)",
+      "ADHD with Academic Impact",
+      "Non-verbal Learning Disability",
+      "Language Processing Disorders"
+    ],
+    "keyPoints": [
+      { "icon": "📚", "label": "Multi-sensory literacy programs" },
+      { "icon": "🔢", "label": "Numeracy & academic skill building" },
+      { "icon": "🏫", "label": "School & IEP coordination" },
+      { "icon": "🌟", "label": "Confidence-building approach" }
+    ]
   },
   {
     "id": "service-07",
     "emoji": "👶",
     "title": "Early Intervention",
-    "shortDescription": "Therapy and coaching for children 0-6 years.",
-    "fullDescription": "Early, targeted support helps children build critical developmental abilities during the most responsive years of brain growth."
+    "shortDescription": "Therapy and coaching for children 0–6 years.",
+    "fullDescription": "Early Intervention is one of the most powerful tools available in child development support. The brain is most plastic and responsive in the first six years of life — making early, targeted therapy dramatically more effective than interventions started later. Our Early Intervention program at Vathsalya CNNC brings together speech therapy, occupational therapy, physiotherapy, behavior support, and parent coaching into a coordinated, family-centered program designed for infants and young children.",
+    "whoItHelps": "Infants and children aged 0–6 years who show early signs of developmental delay in motor development, communication, social-emotional skills, feeding, sensory processing, or any global developmental concern. Also ideal for children with prenatal risk factors or neonatal complications.",
+    "whatToExpect": "A comprehensive developmental assessment is followed by a Personalized Family Service Plan (PFSP) addressing the child's needs across all domains. Therapy is delivered in a warm, stimulating environment using play and evidence-based techniques. Parents are central partners — sessions include parent coaching to carry learning into everyday routines.",
+    "benefits": [
+      "Maximum developmental gains during the most critical window",
+      "Family-centered, home-compatible strategies",
+      "Prevention of secondary difficulties through early support",
+      "Coordinated multi-therapy approach under one roof",
+      "Stronger parent-child interaction and attachment",
+      "Better long-term outcomes in school and life"
+    ],
+    "conditions": [
+      "Global Developmental Delay (0–6 years)",
+      "Autism Spectrum Disorder — Early Signs",
+      "Cerebral Palsy",
+      "Down Syndrome",
+      "Feeding & Swallowing Difficulties",
+      "Premature Birth / NICU Graduates",
+      "Sensory Processing Concerns",
+      "Language & Speech Delay in Toddlers"
+    ],
+    "keyPoints": [
+      { "icon": "⏰", "label": "Critical window — ages 0 to 6" },
+      { "icon": "🧩", "label": "Multi-therapy coordinated programs" },
+      { "icon": "👨‍👩‍👦", "label": "Family-centered service delivery" },
+      { "icon": "🌱", "label": "Prevention-focused, strengths-based" }
+    ]
   },
   {
     "id": "service-08",
     "emoji": "🧪",
     "title": "Diagnostic Screening",
     "shortDescription": "Standardized developmental and functional assessments.",
-    "fullDescription": "We perform screening and profile-based evaluations to identify strengths, risks, and intervention priorities accurately."
+    "fullDescription": "Accurate diagnosis is the foundation of effective intervention. Our Diagnostic Screening service uses internationally recognized standardized tools and clinical expertise to evaluate children across developmental, cognitive, behavioral, and functional domains. Our multidisciplinary team conducts thorough profile-based evaluations that go beyond labels — identifying each child's unique pattern of strengths and challenges to guide precise, effective intervention planning.",
+    "whoItHelps": "Children whose parents or educators have concerns about their development, learning, behavior, attention, or social skills. Also for children referred by pediatricians, schools, or other professionals for a formal diagnostic opinion. Suitable from infancy through school age.",
+    "whatToExpect": "Screening involves a combination of parent/caregiver interviews, teacher observation forms, standardized tests, and direct child assessments conducted by our specialist team. The process may span one or two sessions. A comprehensive written report with diagnostic impressions, strengths, challenges, and recommendations is provided.",
+    "benefits": [
+      "Clarity and peace of mind for families",
+      "Accurate diagnosis guiding targeted intervention",
+      "Identification of strengths alongside challenges",
+      "Professional reports accepted by schools and services",
+      "Elimination of diagnostic uncertainty",
+      "Foundation for individualized service planning"
+    ],
+    "conditions": [
+      "Autism Spectrum Disorder (ASD)",
+      "ADHD — Inattentive, Hyperactive, Combined types",
+      "Intellectual Disability",
+      "Learning Disabilities (Dyslexia, Dyscalculia)",
+      "Developmental Language Disorder",
+      "Sensory Processing Disorder",
+      "Global Developmental Delay",
+      "Social-Emotional & Behavioral Disorders"
+    ],
+    "keyPoints": [
+      { "icon": "📋", "label": "Standardized international assessment tools" },
+      { "icon": "🔬", "label": "Multidisciplinary team evaluation" },
+      { "icon": "📄", "label": "Comprehensive written diagnostic report" },
+      { "icon": "💡", "label": "Strengths-focused profile approach" }
+    ]
   },
   {
     "id": "service-09",
     "emoji": "👨‍👩‍👧",
     "title": "Parent Counselling",
     "shortDescription": "Practical strategies for home and routine management.",
-    "fullDescription": "We guide parents with actionable tools to support communication, regulation, and learning through everyday interactions."
+    "fullDescription": "Parents are the most constant and powerful influence in a child's development. Our Parent Counselling service equips families with evidence-based strategies, emotional support, and practical tools to support their child's growth at home and in daily life. Sessions address communication techniques, behavior management, routine-building, caregiver well-being, and the emotional journey of raising a child with additional needs.",
+    "whoItHelps": "Parents and caregivers of children with developmental, behavioral, or learning challenges; parents experiencing stress, burnout, or uncertainty about how to best support their child; families navigating post-diagnosis adjustment; and caregivers who wish to become active partners in their child's therapy program.",
+    "whatToExpect": "Sessions are warm, non-judgmental, and solution-focused. Our counsellors listen deeply to your concerns, explain your child's needs in plain language, and collaboratively build strategies that fit your family's routine and values. You may attend individually, as a couple, or as a whole family depending on needs.",
+    "benefits": [
+      "Practical, realistic strategies for home routines",
+      "Reduced parental stress and anxiety",
+      "Improved parent-child communication and bonding",
+      "Better understanding of your child's diagnosis",
+      "Tools to manage challenging behaviors at home",
+      "Emotional support and validation for caregivers"
+    ],
+    "conditions": [
+      "Parents of children with ASD",
+      "Families managing ADHD at home",
+      "Post-diagnosis adjustment & grief",
+      "Parent burn-out & compassion fatigue",
+      "Behavior management difficulties at home",
+      "Co-parenting challenges around a child's needs",
+      "School transition anxiety for parents"
+    ],
+    "keyPoints": [
+      { "icon": "❤️", "label": "Compassionate, non-judgmental space" },
+      { "icon": "🛠️", "label": "Practical home-based strategies" },
+      { "icon": "🧘", "label": "Caregiver well-being support" },
+      { "icon": "📖", "label": "Plain-language diagnosis guidance" }
+    ]
   },
   {
     "id": "service-10",
     "emoji": "🏫",
     "title": "School Readiness Program",
     "shortDescription": "Building skills for successful classroom transitions.",
-    "fullDescription": "Children develop attention, pre-academics, peer interaction, and independence skills needed for school settings."
+    "fullDescription": "Starting school is one of the biggest transitions in a child's life. Our School Readiness Program prepares children with the cognitive, social, emotional, and physical skills needed to participate successfully in a classroom environment. Through structured, play-based group and individual sessions, children develop pre-academic skills, attention, peer interaction, following instructions, and self-regulation — the building blocks of school success.",
+    "whoItHelps": "Children aged 3–6 years approaching preschool or kindergarten entry who may have developmental delays, ASD, language difficulties, attention challenges, social skill gaps, or any concern about readiness for a formal learning environment.",
+    "whatToExpect": "Assessment of school readiness across cognitive, language, social, emotional, and physical domains. Group and individual sessions address pre-reading and pre-writing skills, number concepts, attention and listening, classroom behavior, independence skills, and peer play. School transition plans are developed with input from families and teachers.",
+    "benefits": [
+      "Confident, prepared transition into school",
+      "Pre-reading, pre-writing, and numeracy skill building",
+      "Improved attention, listening, and instruction-following",
+      "Better peer interaction and social skills",
+      "Self-care and independence in school routines",
+      "Reduced school anxiety for children and parents"
+    ],
+    "conditions": [
+      "Developmental Delay approaching school age",
+      "Autism Spectrum Disorder",
+      "Language & Communication Delays",
+      "Social Skills Difficulties",
+      "Attention & Regulation Challenges",
+      "Sensory Processing Concerns in Classroom",
+      "Children with IEP or support needs"
+    ],
+    "keyPoints": [
+      { "icon": "✏️", "label": "Pre-literacy & numeracy foundations" },
+      { "icon": "👫", "label": "Peer interaction & social readiness" },
+      { "icon": "🎧", "label": "Listening & following instructions" },
+      { "icon": "🏆", "label": "Confidence-building transition support" }
+    ]
   },
   {
     "id": "service-11",
     "emoji": "🤝",
     "title": "Group Therapy",
     "shortDescription": "Peer-based sessions for social and communication growth.",
-    "fullDescription": "Small-group activities help children practice turn-taking, collaboration, and emotional regulation in guided social contexts."
+    "fullDescription": "Group Therapy at Vathsalya CNNC provides children with a natural, structured social environment where they can practice and consolidate the skills developed in individual therapy. Small, carefully matched groups of 3–6 children work together under therapist guidance through games, collaborative tasks, storytelling, and structured social scenarios — building real-world communication, cooperation, and emotional regulation skills.",
+    "whoItHelps": "Children who have completed or are in the process of individual therapy and are ready to generalize their skills in a social setting; children with social skills difficulties, ASD, anxiety, communication disorders, or those who simply benefit from peer interaction with professional guidance.",
+    "whatToExpect": "Groups are formed based on age, needs, and therapy goals. Sessions run in a structured yet fun format. Therapists facilitate activities, model appropriate social behaviors, provide feedback, and coach in the moment. Parents receive updates on each session and strategies to continue social skill practice at home.",
+    "benefits": [
+      "Real-world practice of speech and social skills",
+      "Turn-taking, sharing, and cooperation development",
+      "Peer relationships and friendship building",
+      "Emotional regulation in social contexts",
+      "Confidence and communication in group settings",
+      "Generalization of skills from individual therapy"
+    ],
+    "conditions": [
+      "Autism Spectrum Disorder (Social Skills Groups)",
+      "Social Anxiety & Shyness",
+      "Communication & Language Disorders",
+      "ADHD — Social Skills Development",
+      "Children transitioning from individual to group",
+      "Peer Interaction Difficulties"
+    ],
+    "keyPoints": [
+      { "icon": "👥", "label": "Small, carefully matched groups" },
+      { "icon": "🎮", "label": "Games, stories & collaborative tasks" },
+      { "icon": "💬", "label": "Real-world communication practice" },
+      { "icon": "🌟", "label": "Skill generalization focus" }
+    ]
   },
   {
     "id": "service-12",
     "emoji": "🧑‍⚕️",
     "title": "Neurology Follow-up",
     "shortDescription": "Ongoing review for neurological developmental concerns.",
-    "fullDescription": "Regular follow-ups track developmental progress, response to interventions, and evolving clinical recommendations."
+    "fullDescription": "Our Neurology Follow-up service offers structured, ongoing clinical reviews for children with confirmed or suspected neurological conditions. Regular follow-ups allow our specialists to track developmental progress, review the response to interventions and medications, update clinical recommendations, and ensure that children's care plans remain aligned with their evolving needs. This continuity of care is essential for complex cases requiring long-term management.",
+    "whoItHelps": "Children with established neurological diagnoses (epilepsy, cerebral palsy, neurodevelopmental disorders) who require periodic review; those on medication requiring monitoring; children in long-term therapy programs needing clinical oversight; and families seeking a second opinion or ongoing expert input.",
+    "whatToExpect": "Follow-up appointments review the child's progress since the last visit using parent reports, school information, and direct assessment. Medication adjustments, therapy plan updates, referrals, and new investigations may be recommended. Families receive clear written summaries of recommendations after each review.",
+    "benefits": [
+      "Consistent, expert clinical oversight over time",
+      "Timely adjustments to treatment and medication",
+      "Monitoring of developmental trajectory",
+      "Prevention of regression or worsening",
+      "Coordination between neurologist and therapy team",
+      "Clear, written summaries for school and medical records"
+    ],
+    "conditions": [
+      "Epilepsy & Seizure Disorders",
+      "Cerebral Palsy",
+      "Autism Spectrum Disorder (Ongoing Review)",
+      "Neurodevelopmental Disorders — Monitoring",
+      "ADHD on Medication",
+      "Rare Neurogenetic Conditions",
+      "Children with Complex Medical Histories"
+    ],
+    "keyPoints": [
+      { "icon": "🔄", "label": "Structured, periodic clinical reviews" },
+      { "icon": "💊", "label": "Medication monitoring & adjustment" },
+      { "icon": "📊", "label": "Developmental trajectory tracking" },
+      { "icon": "📝", "label": "Written summaries for all stakeholders" }
+    ]
   },
   {
     "id": "service-13",
     "emoji": "📋",
     "title": "Comprehensive Care Planning",
     "shortDescription": "Integrated plans across therapies and specialists.",
-    "fullDescription": "Our multidisciplinary team aligns goals, timelines, and home programs so children receive coordinated, measurable support."
+    "fullDescription": "Complex developmental needs rarely require a single intervention. Comprehensive Care Planning at Vathsalya CNNC brings together our entire multidisciplinary team — pediatricians, speech therapists, occupational therapists, physiotherapists, special educators, and behavior specialists — to create one unified, coordinated care plan for your child. This integrated approach eliminates fragmentation, aligns goals across disciplines, and ensures your child receives consistent, measurable support.",
+    "whoItHelps": "Children with complex, multi-domain developmental needs who are receiving or require support from multiple specialists; families who feel overwhelmed navigating multiple services without coordination; children with conditions such as ASD, cerebral palsy, multiple disability, or rare syndromes who benefit from a unified team approach.",
+    "whatToExpect": "A comprehensive intake assessment across all relevant domains is followed by a multidisciplinary team meeting. Together, the team — with active input from the family — creates a Comprehensive Care Plan with unified goals, timelines, home programs, and measurable outcomes. Regular review meetings ensure the plan stays current.",
+    "benefits": [
+      "One cohesive plan replacing fragmented care",
+      "Unified goals shared across all therapy disciplines",
+      "Reduced burden on families navigating multiple services",
+      "Better, faster progress through coordinated effort",
+      "Clear timelines and measurable outcome tracking",
+      "Family voice is central to planning"
+    ],
+    "conditions": [
+      "Autism Spectrum Disorder (Complex)",
+      "Cerebral Palsy with Multiple Needs",
+      "Rare Genetic & Neurological Syndromes",
+      "Multiple Developmental Disabilities",
+      "Children with Complex Educational Needs",
+      "Families receiving services at multiple providers"
+    ],
+    "keyPoints": [
+      { "icon": "🗂️", "label": "Single unified care plan" },
+      { "icon": "👥", "label": "Full multidisciplinary team collaboration" },
+      { "icon": "🎯", "label": "Shared goals across all disciplines" },
+      { "icon": "📅", "label": "Regular review & plan updates" }
+    ]
   }
 ]

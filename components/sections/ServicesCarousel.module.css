@@ -82,6 +82,13 @@
   border-left: 4px solid;
   border-radius: 1rem;
   padding: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 20px 48px rgba(232, 168, 152, 0.55);
+  opacity: 1 !important;
 }
 
 .cardActive {
@@ -97,6 +104,21 @@
   background: var(--color-cream);
   opacity: 0.75;
   margin-top: 30px;
+}
+
+.learnMore {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-peach);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.learnMore:hover {
+  color: var(--color-sage-deep);
 }
 
 .activeEmoji {
@@ -152,6 +174,24 @@
   border-radius: 1rem;
   background: var(--color-cream);
   padding: 1rem;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.mobileCard:hover {
+  border-color: var(--color-peach-soft);
+  box-shadow: 0 8px 24px rgba(232, 168, 152, 0.3);
+}
+
+.mobileLearnMore {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-peach);
+  letter-spacing: 0.04em;
 }
 
 .mobileEmoji {

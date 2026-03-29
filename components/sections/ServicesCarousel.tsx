@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import Link from "next/link";
 import styles from "./ServicesCarousel.module.css";
 
 type Service = (typeof import("@/data/services.json"))[number];
@@ -147,14 +148,15 @@ export default function ServicesCarousel({ services }: ServicesCarouselProps) {
     return (
       <div className={styles.mobileList}>
         {safeServices.map((service) => (
-          <article
+          <Link
             key={service.id}
+            href={`/services/${service.id}`}
             className={styles.mobileCard}
           >
             <p className={styles.mobileEmoji}>{service.emoji}</p>
             <h3 className={`font-cormorant ${styles.mobileTitle}`}>{service.title}</h3>
             <p className={styles.mobileDescription}>{service.shortDescription}</p>
-          </article>
+          </Link>
         ))}
       </div>
     );
@@ -356,8 +358,9 @@ export default function ServicesCarousel({ services }: ServicesCarouselProps) {
           }
 
           return (
-            <article
+            <Link
               key={safeServices.length >= 3 ? `${item.service.id}-${item.sourceIndex}` : `${item.service.id}-${item.position}`}
+              href={`/services/${item.service.id}`}
               className={`${styles.card} ${item.isActive ? styles.cardActive : styles.cardInactive}`}
               style={{
                 ...item.style,
@@ -368,6 +371,8 @@ export default function ServicesCarousel({ services }: ServicesCarouselProps) {
                 transform: `translate(0, -50%) scale(${item.isActive ? 1.05 : 0.92})`,
                 transition: "top 0.65s cubic-bezier(0.22, 1, 0.36, 1), left 0.65s cubic-bezier(0.22, 1, 0.36, 1), width 0.65s cubic-bezier(0.22, 1, 0.36, 1), min-height 0.65s cubic-bezier(0.22, 1, 0.36, 1), height 0.65s cubic-bezier(0.22, 1, 0.36, 1), transform 0.65s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.5s ease",
                 willChange: "top, left, width, transform, opacity",
+                display: "block",
+                textDecoration: "none",
               }}
             >
               <p className={item.isActive ? styles.activeEmoji : styles.sideEmoji}>
@@ -381,7 +386,7 @@ export default function ServicesCarousel({ services }: ServicesCarouselProps) {
               ) : (
                 <h3 className={`font-cormorant ${styles.sideTitle}`}>{item.service.title}</h3>
               )}
-            </article>
+            </Link>
           );
         })}
       </div>

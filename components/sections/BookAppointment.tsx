@@ -40,8 +40,7 @@ export default function BookAppointment() {
       `${siteData.bookingForm.messageTemplate.childAge}: ${formData.childAge}`,
       `${siteData.bookingForm.messageTemplate.service}: ${formData.service}`,
       `${siteData.bookingForm.messageTemplate.preferredDate}: ${formData.preferredDate}`,
-      `${siteData.bookingForm.messageTemplate.additionalNotes}: ${
-        formData.additionalNotes || siteData.bookingForm.messageTemplate.emptyNotesFallback
+      `${siteData.bookingForm.messageTemplate.additionalNotes}: ${formData.additionalNotes || siteData.bookingForm.messageTemplate.emptyNotesFallback
       }`,
     ].join("\n");
 
