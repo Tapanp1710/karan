@@ -5,15 +5,15 @@
 @tailwind utilities;
 
 :root {
-  --color-cream: #f3eee4;
-  --color-ivory: #faf6ef;
-  --color-peach: #dfa287;
-  --color-peach-soft: #efc7b2;
-  --color-sage: #98a06a;
-  --color-sage-deep: #7f8a58;
-  --color-taupe: #b7a995;
-  --color-ink: #5f5149;
-  --color-ink-soft: #7a6a61;
+  --color-cream: #f4f1e1;
+  --color-ivory: #faf8f3;
+  --color-peach: #e4ac9e;
+  --color-peach-soft: #f7cab8;
+  --color-sage: #afb69b;
+  --color-sage-deep: #92997b;
+  --color-taupe: #c4baac;
+  --color-ink: #5b564c;
+  --color-ink-soft: #827b6e;
 }
 
 html {
@@ -63,3 +63,17 @@ body {
     transform: translateY(0) rotate(0deg);
   }
 }
+
+.material-symbols-rounded {
+  font-family: 'Material Symbols Rounded', sans-serif;
+  font-size: 1.25em; /* default scale */
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+}
+
