@@ -8,7 +8,7 @@ type ServiceCardProps = {
 export default function ServiceCard({ service }: ServiceCardProps) {
   return (
     <article className={styles.card}>
-      <p className={styles.emoji}>{service.emoji}</p>
+      <p className={`material-symbols-rounded ${styles.emoji}`}>{service.emoji}</p>
       <h3 className={`font-cormorant ${styles.title}`}>{service.title}</h3>
       <p className={styles.description}>{service.shortDescription}</p>
     </article>

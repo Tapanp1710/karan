@@ -153,7 +153,7 @@ export default function ServicesCarousel({ services }: ServicesCarouselProps) {
             href={`/services/${service.id}`}
             className={styles.mobileCard}
           >
-            <p className={styles.mobileEmoji}>{service.emoji}</p>
+            <p className={`material-symbols-rounded ${styles.mobileEmoji}`}>{service.emoji}</p>
             <h3 className={`font-cormorant ${styles.mobileTitle}`}>{service.title}</h3>
             <p className={styles.mobileDescription}>{service.shortDescription}</p>
           </Link>
@@ -375,7 +375,7 @@ export default function ServicesCarousel({ services }: ServicesCarouselProps) {
                 textDecoration: "none",
               }}
             >
-              <p className={item.isActive ? styles.activeEmoji : styles.sideEmoji}>
+              <p className={`material-symbols-rounded ${item.isActive ? styles.activeEmoji : styles.sideEmoji}`}>
                 {item.service.emoji}
               </p>
               {item.isActive ? (

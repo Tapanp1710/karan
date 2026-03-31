@@ -56,7 +56,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       {/* ── Hero ── */}
       <header className={styles.hero}>
         <div className={styles.heroInner}>
-          <span className={styles.heroEmoji}>{s.emoji}</span>
+          <span className={`material-symbols-rounded ${styles.heroEmoji}`}>{s.emoji}</span>
           <div>
             <h1 className={`font-cormorant ${styles.heroTitle}`}>{s.title}</h1>
             <p className={styles.heroShort}>{s.shortDescription}</p>
@@ -69,7 +69,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         <div className={styles.keyPoints}>
           {(s.keyPoints as { icon: string; label: string }[]).map((kp, i) => (
             <div key={i} className={styles.keyPoint}>
-              <span className={styles.keyPointIcon}>{kp.icon}</span>
+              <span className={`material-symbols-rounded ${styles.keyPointIcon}`}>{kp.icon}</span>
               <span className={styles.keyPointLabel}>{kp.label}</span>
             </div>
           ))}
@@ -145,7 +145,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         <div className={styles.ctaBannerInner}>
           <p className={`font-cormorant ${styles.ctaHeading}`}>Every Child Deserves the Right Support</p>
           <p className={styles.ctaSub}>
-            Our multidisciplinary team is ready to assess, guide, and support your child's unique journey.
+            Our multidisciplinary team is ready to assess, guide, and support your child&apos;s unique journey.
           </p>
           <div className={styles.ctaButtons}>
             <a href="/#book" className={styles.ctaButtonPrimary}>Book an Appointment</a>
@@ -161,7 +161,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           <div className={styles.relatedGrid}>
             {related.map((rel) => (
               <Link key={rel.id} href={`/services/${rel.id}`} className={styles.relatedCard}>
-                <span className={styles.relatedEmoji}>{rel.emoji}</span>
+                <span className={`material-symbols-rounded ${styles.relatedEmoji}`}>{rel.emoji}</span>
                 <h3 className={`font-cormorant ${styles.relatedTitle}`}>{rel.title}</h3>
                 <p className={styles.relatedDesc}>{rel.shortDescription}</p>
                 <span className={styles.relatedCta}>Learn more →</span>
