@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: siteDataStatic.metadataTitle,
   description: siteDataStatic.seoDescription,
   viewport: "width=device-width, initial-scale=1",
+  icons: {
+    icon: siteDataStatic.logoPath,
+  },
   openGraph: {
     title: siteDataStatic.metadataTitle,
     description: siteDataStatic.seoDescription,
