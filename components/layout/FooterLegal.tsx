@@ -28,8 +28,8 @@ Parents or legal guardians have the right to: access their child's clinical reco
 7. Communication
 By providing your contact details, you consent to receiving appointment reminders, service updates, and care-related communications. You may opt out of marketing communications at any time by contacting us.
 
-8. WhatsApp Communication
-If you use our WhatsApp booking service, please be aware that WhatsApp's own privacy policy also applies. We use WhatsApp solely to facilitate appointment scheduling and brief communications — we do not share clinical details over WhatsApp.
+8. Booking Communication
+If you use our website booking form or WhatsApp, please be aware that the respective platform's privacy policies also apply. We use these channels solely to facilitate appointment scheduling and brief communications — we do not share clinical details over these platforms.
 
 9. Contact Us
 For any privacy-related queries or to exercise your rights, please contact us at our registered clinic address or via the contact details listed on this website.`;
@@ -42,7 +42,7 @@ By accessing this website or using any services provided by Vathsalya Child Neur
 Vathsalya CNNC offers paediatric clinical services including developmental assessments, speech therapy, occupational therapy, physiotherapy, behaviour therapy, special education, early intervention, diagnostic screening, parent counselling, school readiness programs, group therapy, neurology follow-up, and comprehensive care planning. All services are delivered by qualified clinical professionals.
 
 2. Appointments & Booking
-Appointment requests made via this website or WhatsApp are subject to availability and confirmation. A booking is confirmed only upon explicit confirmation from our team. We reserve the right to reschedule or cancel appointments in exceptional circumstances, with reasonable notice provided.
+Appointment requests made via this website or other official channels are subject to availability and confirmation. A booking is confirmed only upon explicit confirmation from our team. We reserve the right to reschedule or cancel appointments in exceptional circumstances, with reasonable notice provided.
 
 3. Cancellations & No-Shows
 We request at least 24 hours' notice for cancellation or rescheduling of appointments. Repeated late cancellations or no-shows may result in a cancellation fee or loss of appointment slot. This policy ensures fair access to our services for all families.

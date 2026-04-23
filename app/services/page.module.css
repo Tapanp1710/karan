@@ -22,7 +22,7 @@
 
 .heading {
   margin-top: 0.5rem;
-  font-size: 3rem;
+  font-size: clamp(2rem, 8vw, 3rem);
   color: var(--color-ink);
   line-height: 1.1;
 }
@@ -60,14 +60,14 @@
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 16px 40px rgba(232, 168, 152, 0.28);
-  border-color: var(--color-peach-soft);
+  box-shadow: 0 16px 40px color-mix(in srgb, var(--color-sage) 20%, transparent);
+  border-color: var(--color-sage-deep);
 }
 
 .cardTop {
   background: linear-gradient(135deg,
-    rgba(242, 196, 184, 0.3) 0%,
-    rgba(138, 154, 106, 0.12) 100%);
+      color-mix(in srgb, var(--color-taupe) 15%, transparent) 0%,
+      color-mix(in srgb, var(--color-sage) 10%, transparent) 100%);
   padding: 1.5rem 1.5rem 1rem;
 }
 
@@ -153,11 +153,22 @@
 
 /* ── Responsive ───────────────────── */
 @media (min-width: 640px) {
-  .page { padding-left: 1.5rem; padding-right: 1.5rem; }
-  .heading { font-size: 3.5rem; }
-  .grid { grid-template-columns: repeat(2, 1fr); }
+  .page {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .heading {
+    font-size: clamp(3rem, 10vw, 3.5rem);
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
-  .grid { grid-template-columns: repeat(3, 1fr); }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

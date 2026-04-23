@@ -28,30 +28,55 @@ export default function BookAppointment() {
   const [formData, setFormData] = useState<BookingForm>(INITIAL_FORM);
   const [showToast, setShowToast] = useState(false);
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const serviceTitles = useMemo(() => servicesData.map((service) => service.title), []);
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setIsSubmitting(true);
 
-    const message = [
-      siteData.bookingForm.messageTemplate.title,
-      `${siteData.bookingForm.messageTemplate.fullName}: ${formData.fullName}`,
-      `${siteData.bookingForm.messageTemplate.phoneNumber}: ${formData.phoneNumber}`,
-      `${siteData.bookingForm.messageTemplate.childAge}: ${formData.childAge}`,
-      `${siteData.bookingForm.messageTemplate.service}: ${formData.service}`,
-      `${siteData.bookingForm.messageTemplate.preferredDate}: ${formData.preferredDate}`,
-      `${siteData.bookingForm.messageTemplate.additionalNotes}: ${formData.additionalNotes || siteData.bookingForm.messageTemplate.emptyNotesFallback
-      }`,
-    ].join("\n");
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: (siteData.bookingForm as any).web3FormsAccessKey || "YOUR_ACCESS_KEY_HERE",
+          subject: siteData.bookingForm.messageTemplate.title,
+          from_name: formData.fullName,
+          email: (siteData.bookingForm as any).recipientEmail || "care@vathsalyacnnc.com",
+          message: [
+            `${siteData.bookingForm.messageTemplate.fullName}: ${formData.fullName}`,
+            `${siteData.bookingForm.messageTemplate.phoneNumber}: ${formData.phoneNumber}`,
+            `${siteData.bookingForm.messageTemplate.childAge}: ${formData.childAge}`,
+            `${siteData.bookingForm.messageTemplate.service}: ${formData.service}`,
+            `${siteData.bookingForm.messageTemplate.preferredDate}: ${formData.preferredDate}`,
+            `${siteData.bookingForm.messageTemplate.additionalNotes}: ${
+              formData.additionalNotes || siteData.bookingForm.messageTemplate.emptyNotesFallback
+            }`,
+          ].join("\n"),
+          ...formData,
+        }),
+      });
 
-    const whatsappNumber = contactData.whatsapp.replace(/\D/g, "");
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+      const result = await response.json();
 
-    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
-    setShowToast(true);
-    setFormData(INITIAL_FORM);
-
-    window.setTimeout(() => setShowToast(false), 2800);
+      if (result.success) {
+        setShowToast(true);
+        setFormData(INITIAL_FORM);
+        window.setTimeout(() => setShowToast(false), 5000);
+      } else {
+        alert("Something went wrong. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("Failed to send booking request. Please check your connection.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

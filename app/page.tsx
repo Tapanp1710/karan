@@ -1,4 +1,5 @@
 import Hero from "@/components/sections/Hero";
+import CircleOfCare from "@/components/sections/CircleOfCare";
 import Services from "@/components/sections/Services";
 import Team from "@/components/sections/Team";
 import Testimonials from "@/components/sections/Testimonials";
@@ -11,6 +12,10 @@ export default function Home() {
     <div className={styles.page}>
       <FadeInSection>
         <Hero />
+      </FadeInSection>
+      <WaveDivider />
+      <FadeInSection>
+        <CircleOfCare />
       </FadeInSection>
       <WaveDivider />
       <FadeInSection>

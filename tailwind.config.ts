@@ -9,14 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        peach: "#DFA287",
-        jspeach: "#DFA287",
-        sage: "#98A06A",
-        taupe: "#B7A995",
-        cream: "#F3EEE4",
-        blush: "#EFC7B2",
-        deep: "#5F5149",
-        offwhite: "#FAF6EF",
+        peach: "#D4A35D",
+        jspeach: "#D4A35D",
+        sage: "#7FB2B8",
+        taupe: "#9CAF88",
+        cream: "#F9F7F1",
+        blush: "#C68E8E",
+        deep: "#2C5272",
+        offwhite: "#FFFFFF",
       },
     },
   },

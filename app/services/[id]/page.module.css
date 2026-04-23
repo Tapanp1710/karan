@@ -20,16 +20,26 @@
   text-decoration: none;
   transition: color 0.2s ease;
 }
-.breadcrumbLink:hover { color: var(--color-sage-deep); }
-.breadcrumbSep { color: var(--color-taupe); }
-.breadcrumbCurrent { color: var(--color-ink); font-weight: 500; }
+
+.breadcrumbLink:hover {
+  color: var(--color-sage-deep);
+}
+
+.breadcrumbSep {
+  color: var(--color-taupe);
+}
+
+.breadcrumbCurrent {
+  color: var(--color-ink);
+  font-weight: 500;
+}
 
 /* ── Hero ────────────────────────────── */
 .hero {
   background: linear-gradient(135deg,
-    rgba(242, 196, 184, 0.18) 0%,
-    rgba(138, 154, 106, 0.1) 100%);
-  border: 1px solid rgba(232, 168, 152, 0.25);
+      color-mix(in srgb, var(--color-taupe) 15%, transparent) 0%,
+      color-mix(in srgb, var(--color-sage) 10%, transparent) 100%);
+  border: 1px solid color-mix(in srgb, var(--color-sage) 20%, transparent);
   border-radius: 1.5rem;
   padding: 2.5rem 2rem;
   margin-bottom: 1.75rem;
@@ -82,7 +92,7 @@
 }
 
 .keyPoint:hover {
-  box-shadow: 0 4px 16px rgba(232, 168, 152, 0.2);
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--color-sage) 15%, transparent);
 }
 
 .keyPointIcon {
@@ -117,7 +127,7 @@
   border-radius: 1rem;
   padding: 1.75rem;
   border-left: 4px solid var(--color-peach);
-  box-shadow: 0 2px 12px rgba(232, 168, 152, 0.08);
+  box-shadow: 0 2px 12px color-mix(in srgb, var(--color-sage) 10%, transparent);
 }
 
 .sectionHeading {
@@ -197,8 +207,8 @@
   font-size: 0.75rem;
   padding: 0.3rem 0.7rem;
   border-radius: 9999px;
-  background: rgba(232, 168, 152, 0.18);
-  border: 1px solid rgba(232, 168, 152, 0.35);
+  background: color-mix(in srgb, var(--color-sage) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-sage) 30%, transparent);
   color: var(--color-ink);
   font-weight: 500;
 }
@@ -252,13 +262,15 @@
   transition: color 0.2s ease;
 }
 
-.sideCtaSecondary:hover { color: var(--color-ink); }
+.sideCtaSecondary:hover {
+  color: var(--color-ink);
+}
 
 /* ── Full-width CTA banner ───────────── */
 .ctaBanner {
   background: linear-gradient(120deg,
-    var(--color-sage) 0%,
-    var(--color-sage-deep) 100%);
+      var(--color-sage) 0%,
+      var(--color-sage-deep) 100%);
   border-radius: 1.5rem;
   margin-bottom: 3.5rem;
   overflow: hidden;
@@ -305,7 +317,7 @@
 
 .ctaButtonPrimary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .ctaButtonSecondary {
@@ -323,7 +335,7 @@
 }
 
 .ctaButtonSecondary:hover {
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 /* ── Related services ────────────────── */
@@ -359,11 +371,14 @@
 
 .relatedCard:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(232, 168, 152, 0.25);
-  border-color: var(--color-peach-soft);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--color-sage) 20%, transparent);
+  border-color: var(--color-sage-deep);
 }
 
-.relatedEmoji { font-size: 1.5rem; line-height: 1; }
+.relatedEmoji {
+  font-size: 1.5rem;
+  line-height: 1;
+}
 
 .relatedTitle {
   font-size: 1.25rem;
@@ -385,7 +400,9 @@
   transition: color 0.2s ease;
 }
 
-.relatedCard:hover .relatedCta { color: var(--color-sage-deep); }
+.relatedCard:hover .relatedCta {
+  color: var(--color-sage-deep);
+}
 
 .allServicesLink {
   text-align: center;
@@ -400,14 +417,28 @@
   transition: color 0.2s ease;
 }
 
-.allServicesLink a:hover { color: var(--color-sage-deep); }
+.allServicesLink a:hover {
+  color: var(--color-sage-deep);
+}
 
 /* ── Responsive ────────────────────── */
 @media (min-width: 640px) {
-  .page { padding-left: 1.5rem; padding-right: 1.5rem; }
-  .heroTitle { font-size: 3.25rem; }
-  .keyPoints { grid-template-columns: repeat(4, 1fr); }
-  .relatedGrid { grid-template-columns: repeat(3, 1fr); }
+  .page {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: 3.25rem;
+  }
+
+  .keyPoints {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .relatedGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -415,6 +446,7 @@
     grid-template-columns: 1fr 360px;
     align-items: start;
   }
+
   .sideCol {
     position: sticky;
     top: 5.5rem;

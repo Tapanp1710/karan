@@ -1,7 +1,7 @@
 [
   {
     "id": "service-01",
-    "emoji": "psychology",
+    "emoji": "Brain",
     "title": "Developmental Pediatrics",
     "shortDescription": "Comprehensive assessment of growth, learning, and behavior.",
     "fullDescription": "Developmental Pediatrics at Vathsalya CNNC provides expert evaluation of your child's developmental milestones across all domains — cognitive, language, motor, social, and emotional. Our specialist pediatricians take a holistic, child-centered approach to understanding each child's unique profile, then design individualized care plans that support communication, learning, and emotional growth.",
@@ -26,26 +26,26 @@
     ],
     "keyPoints": [
       {
-        "icon": "search",
+        "icon": "Search",
         "label": "Comprehensive multi-domain assessment"
       },
       {
-        "icon": "description",
+        "icon": "FileText",
         "label": "Individualized written care plans"
       },
       {
-        "icon": "handshake",
+        "icon": "Handshake",
         "label": "Multidisciplinary team coordination"
       },
       {
-        "icon": "trending_up",
+        "icon": "TrendingUp",
         "label": "Ongoing progress monitoring"
       }
     ]
   },
   {
     "id": "service-02",
-    "emoji": "record_voice_over",
+    "emoji": "MessageSquare",
     "title": "Speech Therapy",
     "shortDescription": "Improving speech clarity, language, and social communication.",
     "fullDescription": "Our Speech-Language Therapy program addresses a wide spectrum of communication challenges in children. Our qualified speech-language therapists work on expressive language (speaking and expressing ideas), receptive language (understanding what is said), articulation and phonology, fluency, voice, and pragmatic or social communication. Sessions are play-based and engaging, making therapy enjoyable for children while achieving meaningful communication goals.",
@@ -71,26 +71,26 @@
     ],
     "keyPoints": [
       {
-        "icon": "theater_comedy",
+        "icon": "Mic2",
         "label": "Play-based, child-friendly sessions"
       },
       {
-        "icon": "hearing",
+        "icon": "Ear",
         "label": "Receptive & expressive language focus"
       },
       {
-        "icon": "smartphone",
+        "icon": "Smartphone",
         "label": "AAC support when required"
       },
       {
-        "icon": "home",
+        "icon": "Home",
         "label": "Home practice plans for families"
       }
     ]
   },
   {
     "id": "service-03",
-    "emoji": "front_hand",
+    "emoji": "HelpingHand",
     "title": "Occupational Therapy",
     "shortDescription": "Support for sensory, motor, and daily living skills.",
     "fullDescription": "Occupational Therapy at Vathsalya CNNC helps children participate more fully in everyday activities — from dressing and feeding to writing and playing. Our occupational therapists focus on fine motor skill development, sensory processing and integration, visual-motor coordination, self-care independence, and school-readiness skills. We create a sensory-rich, safe environment where children can explore, process, and grow.",
@@ -116,26 +116,26 @@
     ],
     "keyPoints": [
       {
-        "icon": "palette",
+        "icon": "Palette",
         "label": "Sensory-rich therapy environment"
       },
       {
-        "icon": "edit",
+        "icon": "PenTool",
         "label": "Handwriting & fine motor focus"
       },
       {
-        "icon": "toys",
+        "icon": "ToyBrick",
         "label": "Play-based purposeful activities"
       },
       {
-        "icon": "home",
+        "icon": "Home",
         "label": "Daily living skills independence"
       }
     ]
   },
   {
     "id": "service-04",
-    "emoji": "directions_run",
+    "emoji": "Activity",
     "title": "Physiotherapy",
     "shortDescription": "Strength, posture, mobility, and movement training.",
     "fullDescription": "Our Pediatric Physiotherapy service targets gross motor skill development and neuromotor rehabilitation. Our physiotherapists assess and treat challenges related to muscle tone, strength, balance, coordination, gait, and posture. We design individualized movement programs that help children build physical confidence and independence, using evidence-based techniques adapted for child-friendly, enjoyable sessions.",
@@ -162,26 +162,26 @@
     ],
     "keyPoints": [
       {
-        "icon": "fitness_center",
+        "icon": "Clover",
         "label": "Strength & muscle tone programs"
       },
       {
-        "icon": "balance",
+        "icon": "Scale",
         "label": "Balance & coordination training"
       },
       {
-        "icon": "footprint",
+        "icon": "Footprints",
         "label": "Gait analysis & correction"
       },
       {
-        "icon": "exercise",
+        "icon": "Home",
         "label": "Home exercise programs"
       }
     ]
   },
   {
     "id": "service-05",
-    "emoji": "extension",
+    "emoji": "Puzzle",
     "title": "Behavior Therapy",
     "shortDescription": "Structured behavior plans for positive outcomes.",
     "fullDescription": "Behavior Therapy at Vathsalya CNNC uses evidence-based, child-affirming approaches — including Applied Behavior Analysis (ABA), Positive Behavior Support (PBS), and Cognitive Behavior Therapy (CBT) principles — to help children understand and manage their behaviors. We work on improving attention, reducing challenging behaviors, building adaptive skills, and strengthening emotional regulation in a safe, structured environment.",
@@ -207,26 +207,26 @@
     ],
     "keyPoints": [
       {
-        "icon": "bar_chart",
+        "icon": "LineChart",
         "label": "Functional behavior assessment"
       },
       {
-        "icon": "check_circle",
+        "icon": "CheckCircle2",
         "label": "Positive reinforcement strategies"
       },
       {
-        "icon": "my_location",
+        "icon": "Target",
         "label": "Measurable, goal-directed plans"
       },
       {
-        "icon": "family_restroom",
+        "icon": "Users2",
         "label": "Intensive parent coaching"
       }
     ]
   },
   {
     "id": "service-06",
-    "emoji": "school",
+    "emoji": "GraduationCap",
     "title": "Special Education",
     "shortDescription": "Personalized learning support and academic readiness.",
     "fullDescription": "Our Special Education service provides individualized learning support for children who require modified or specialized instructional approaches to access academic content. Our trained special educators assess each child's learning profile and design structured, multi-sensory lesson plans that address literacy, numeracy, attention, and classroom participation. We bridge the gap between therapy and academic achievement.",
@@ -252,26 +252,26 @@
     ],
     "keyPoints": [
       {
-        "icon": "menu_book",
+        "icon": "BookOpen",
         "label": "Multi-sensory literacy programs"
       },
       {
-        "icon": "123",
+        "icon": "Hash",
         "label": "Numeracy & academic skill building"
       },
       {
-        "icon": "apartment",
+        "icon": "Building2",
         "label": "School & IEP coordination"
       },
       {
-        "icon": "stars",
+        "icon": "Star",
         "label": "Confidence-building approach"
       }
     ]
   },
   {
     "id": "service-07",
-    "emoji": "child_care",
+    "emoji": "Baby",
     "title": "Early Intervention",
     "shortDescription": "Therapy and coaching for children 0–6 years.",
     "fullDescription": "Early Intervention is one of the most powerful tools available in child development support. The brain is most plastic and responsive in the first six years of life — making early, targeted therapy dramatically more effective than interventions started later. Our Early Intervention program at Vathsalya CNNC brings together speech therapy, occupational therapy, physiotherapy, behavior support, and parent coaching into a coordinated, family-centered program designed for infants and young children.",
@@ -297,26 +297,26 @@
     ],
     "keyPoints": [
       {
-        "icon": "schedule",
+        "icon": "Clock",
         "label": "Critical window — ages 0 to 6"
       },
       {
-        "icon": "extension",
+        "icon": "Puzzle",
         "label": "Multi-therapy coordinated programs"
       },
       {
-        "icon": "family_restroom",
+        "icon": "Users2",
         "label": "Family-centered service delivery"
       },
       {
-        "icon": "eco",
+        "icon": "Sprout",
         "label": "Prevention-focused, strengths-based"
       }
     ]
   },
   {
     "id": "service-08",
-    "emoji": "science",
+    "emoji": "Search",
     "title": "Diagnostic Screening",
     "shortDescription": "Standardized developmental and functional assessments.",
     "fullDescription": "Accurate diagnosis is the foundation of effective intervention. Our Diagnostic Screening service uses internationally recognized standardized tools and clinical expertise to evaluate children across developmental, cognitive, behavioral, and functional domains. Our multidisciplinary team conducts thorough profile-based evaluations that go beyond labels — identifying each child's unique pattern of strengths and challenges to guide precise, effective intervention planning.",
@@ -342,26 +342,26 @@
     ],
     "keyPoints": [
       {
-        "icon": "content_paste",
+        "icon": "ClipboardCheck",
         "label": "Standardized international assessment tools"
       },
       {
-        "icon": "science",
+        "icon": "Stethoscope",
         "label": "Multidisciplinary team evaluation"
       },
       {
-        "icon": "feed",
+        "icon": "FileStack",
         "label": "Comprehensive written diagnostic report"
       },
       {
-        "icon": "lightbulb",
+        "icon": "Lightbulb",
         "label": "Strengths-focused profile approach"
       }
     ]
   },
   {
     "id": "service-09",
-    "emoji": "family_restroom",
+    "emoji": "Users",
     "title": "Parent Counselling",
     "shortDescription": "Practical strategies for home and routine management.",
     "fullDescription": "Parents are the most constant and powerful influence in a child's development. Our Parent Counselling service equips families with evidence-based strategies, emotional support, and practical tools to support their child's growth at home and in daily life. Sessions address communication techniques, behavior management, routine-building, caregiver well-being, and the emotional journey of raising a child with additional needs.",
@@ -386,26 +386,26 @@
     ],
     "keyPoints": [
       {
-        "icon": "favorite",
+        "icon": "Heart",
         "label": "Compassionate, non-judgmental space"
       },
       {
-        "icon": "build",
+        "icon": "Wrench",
         "label": "Practical home-based strategies"
       },
       {
-        "icon": "self_care",
+        "icon": "Smile",
         "label": "Caregiver well-being support"
       },
       {
-        "icon": "menu_book",
+        "icon": "Book",
         "label": "Plain-language diagnosis guidance"
       }
     ]
   },
   {
     "id": "service-10",
-    "emoji": "apartment",
+    "emoji": "School",
     "title": "School Readiness Program",
     "shortDescription": "Building skills for successful classroom transitions.",
     "fullDescription": "Starting school is one of the biggest transitions in a child's life. Our School Readiness Program prepares children with the cognitive, social, emotional, and physical skills needed to participate successfully in a classroom environment. Through structured, play-based group and individual sessions, children develop pre-academic skills, attention, peer interaction, following instructions, and self-regulation — the building blocks of school success.",
@@ -430,26 +430,26 @@
     ],
     "keyPoints": [
       {
-        "icon": "edit",
+        "icon": "PencilLine",
         "label": "Pre-literacy & numeracy foundations"
       },
       {
-        "icon": "group",
+        "icon": "Users2",
         "label": "Peer interaction & social readiness"
       },
       {
-        "icon": "headphones",
+        "icon": "Headphones",
         "label": "Listening & following instructions"
       },
       {
-        "icon": "emoji_events",
+        "icon": "Trophy",
         "label": "Confidence-building transition support"
       }
     ]
   },
   {
     "id": "service-11",
-    "emoji": "handshake",
+    "emoji": "Handshake",
     "title": "Group Therapy",
     "shortDescription": "Peer-based sessions for social and communication growth.",
     "fullDescription": "Group Therapy at Vathsalya CNNC provides children with a natural, structured social environment where they can practice and consolidate the skills developed in individual therapy. Small, carefully matched groups of 3–6 children work together under therapist guidance through games, collaborative tasks, storytelling, and structured social scenarios — building real-world communication, cooperation, and emotional regulation skills.",
@@ -473,26 +473,26 @@
     ],
     "keyPoints": [
       {
-        "icon": "group",
+        "icon": "Users2",
         "label": "Small, carefully matched groups"
       },
       {
-        "icon": "sports_esports",
+        "icon": "Gamepad2",
         "label": "Games, stories & collaborative tasks"
       },
       {
-        "icon": "chat",
+        "icon": "MessagesSquare",
         "label": "Real-world communication practice"
       },
       {
-        "icon": "stars",
+        "icon": "Sparkles",
         "label": "Skill generalization focus"
       }
     ]
   },
   {
     "id": "service-12",
-    "emoji": "medical_services",
+    "emoji": "Stethoscope",
     "title": "Neurology Follow-up",
     "shortDescription": "Ongoing review for neurological developmental concerns.",
     "fullDescription": "Our Neurology Follow-up service offers structured, ongoing clinical reviews for children with confirmed or suspected neurological conditions. Regular follow-ups allow our specialists to track developmental progress, review the response to interventions and medications, update clinical recommendations, and ensure that children's care plans remain aligned with their evolving needs. This continuity of care is essential for complex cases requiring long-term management.",
@@ -517,26 +517,26 @@
     ],
     "keyPoints": [
       {
-        "icon": "sync",
+        "icon": "RefreshCcw",
         "label": "Structured, periodic clinical reviews"
       },
       {
-        "icon": "medication",
+        "icon": "Pill",
         "label": "Medication monitoring & adjustment"
       },
       {
-        "icon": "bar_chart",
+        "icon": "BarChart3",
         "label": "Developmental trajectory tracking"
       },
       {
-        "icon": "description",
+        "icon": "FileText",
         "label": "Written summaries for all stakeholders"
       }
     ]
   },
   {
     "id": "service-13",
-    "emoji": "content_paste",
+    "emoji": "ClipboardList",
     "title": "Comprehensive Care Planning",
     "shortDescription": "Integrated plans across therapies and specialists.",
     "fullDescription": "Complex developmental needs rarely require a single intervention. Comprehensive Care Planning at Vathsalya CNNC brings together our entire multidisciplinary team — pediatricians, speech therapists, occupational therapists, physiotherapists, special educators, and behavior specialists — to create one unified, coordinated care plan for your child. This integrated approach eliminates fragmentation, aligns goals across disciplines, and ensures your child receives consistent, measurable support.",
@@ -560,19 +560,19 @@
     ],
     "keyPoints": [
       {
-        "icon": "folder",
+        "icon": "FolderOpen",
         "label": "Single unified care plan"
       },
       {
-        "icon": "group",
+        "icon": "Users2",
         "label": "Full multidisciplinary team collaboration"
       },
       {
-        "icon": "my_location",
+        "icon": "Target",
         "label": "Shared goals across all disciplines"
       },
       {
-        "icon": "📅",
+        "icon": "CalendarDays",
         "label": "Regular review & plan updates"
       }
     ]

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getData } from "@/lib/getData";
 import styles from "./Hero.module.css";
 
@@ -33,6 +34,17 @@ export default async function Hero() {
               {hero.secondaryButtonText}
             </a>
           </div>
+        </div>
+
+        <div className={styles.imageContainer}>
+          <Image
+            src={hero.backgroundImagePath}
+            alt="Vathsalya Hero"
+            width={450}
+            height={550}
+            priority
+            style={{ objectFit: "contain" }}
+          />
         </div>
       </div>
     </section>

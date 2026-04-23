@@ -1,0 +1,50 @@
+{
+  "intro": {
+    "title": "A 360° Circle of Care, for Every Milestone",
+    "description": "The early years of a child's growth are important and form an important foundation for later years of life. You don't have to navigate it alone - Vathsalya's is there to support you at every stage to make your journey effortlessly and affordably. Your child is supported by a dedicated, collaborative team so that what is understood in the clinic reflects in the classroom, and feels manageable at home. We bring diagnosis, therapy, education, and parental guidance into one cohesive system so progress in one space naturally carries into another."
+  },
+  "features": [
+    {
+      "title": "Integrated",
+      "description": "No more navigating between specialists or repeating your story. Everything works together, seamlessly."
+    },
+    {
+      "title": "Continuous",
+      "description": "Plans are not fixed but evolve. Support adjusts as your child grows, learns, and responds."
+    },
+    {
+      "title": "Empowering",
+      "description": "The focus goes beyond immediate milestones, building toward independence, confidence, and everyday ease."
+    }
+  ],
+  "steps": [
+    {
+      "id": "diagnosis",
+      "title": "Multi-Modal Diagnosis",
+      "description": "We don't begin with assumptions. We begin with understanding carefully, thoroughly, and with intent. Because the right support starts with knowing what truly needs attention, and why. Our approach looks deeper into identifying the underlying patterns and root causes that shape your child's development. Through detailed behavioural evaluations and structured diagnostic tools, we assess both the nature and intensity of neurodivergence. This allows us to build a clear, accurate picture that guides every step that follows. Our diagnostic process integrates tools such as MCAT-based assessments and genetic analysis, helping uncover biological and developmental markers that may influence your child's needs.",
+      "icon": "/images/icons/diagnosis.svg",
+      "shortLabel": "Diagnosis"
+    },
+    {
+      "id": "therapy",
+      "title": "Customised Therapy Plans",
+      "description": "Therapy is not a fixed routine. Every child responds differently, and so every plan is designed to adapt gently, consistently, and with intention. No standard protocols. No rigid structures. Each therapy plan is built around your child's specific needs, with the frequency, intensity, and sequence of intervention carefully adjusted to what truly works for them. Progress is understood from both sides. Clinical observations are paired with parental insights from everyday experiences creating a continuous feedback loop that refines therapy in real time, keeping it aligned with your child's actual progress. Therapy is continuously monitored and thoughtfully updated.",
+      "icon": "/images/icons/therapy.svg",
+      "shortLabel": "Therapy"
+    },
+    {
+      "id": "education",
+      "title": "Special Education",
+      "description": "Education isn't one-size-fits-all. Children experience and process learning in different ways and not always at the pace or through the methods conventional classrooms expect. We adapt the world of learning to meet your child where they are, making it easier for them to understand, engage, and grow. Every child is guided by a personalised learning plan that is structured, yet flexible. Learning does not happen in isolation. We work closely with schools and teachers, helping them understand how neurodivergent children learn, and equipping them with the tools to bridge gaps within the classroom. Education here is not simply delivered. It is adapted, paced, and shaped around your child's perspective.",
+      "icon": "/images/icons/education.svg",
+      "shortLabel": "Education"
+    },
+    {
+      "id": "parenting",
+      "title": "Parent Coaching",
+      "description": "Progress doesn't pause outside the therapy room. We support you—the most constant presence in your child's world—with the understanding and tools to carry that progress forward, naturally and confidently. Thoughtful, evidence-informed guidance to support your child's physical and cognitive well-being. Small, consistent changes in nutrition can help regulate energy, attention, and sensory responses creating a more stable foundation for growth. Moments of overwhelm can feel intense for both child and parent. We guide you through calm, practical ways to respond to meltdowns and challenging situations. Therapy doesn't need a clinical setting to be effective. We help you incorporate simple, meaningful practices into everyday routines.",
+      "icon": "/images/icons/parenting.svg",
+      "shortLabel": "Parenting"
+    }
+  ]
+}

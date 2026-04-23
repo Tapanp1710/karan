@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getData } from "@/lib/getData";
+import DynamicIcon from "@/components/ui/DynamicIcon";
+import BookingButton from "@/components/ui/BookingButton";
 import styles from "./page.module.css";
 
 type ServicesData = typeof import("@/data/services.json");
@@ -56,7 +58,9 @@ export default async function ServiceDetailPage({ params }: Props) {
       {/* ── Hero ── */}
       <header className={styles.hero}>
         <div className={styles.heroInner}>
-          <span className={`material-symbols-rounded ${styles.heroEmoji}`}>{s.emoji}</span>
+          <div className={styles.heroEmoji}>
+            <DynamicIcon name={s.emoji} size={48} color="var(--color-peach)" />
+          </div>
           <div>
             <h1 className={`font-cormorant ${styles.heroTitle}`}>{s.title}</h1>
             <p className={styles.heroShort}>{s.shortDescription}</p>
@@ -69,7 +73,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         <div className={styles.keyPoints}>
           {(s.keyPoints as { icon: string; label: string }[]).map((kp, i) => (
             <div key={i} className={styles.keyPoint}>
-              <span className={`material-symbols-rounded ${styles.keyPointIcon}`}>{kp.icon}</span>
+              <DynamicIcon name={kp.icon} size={24} color="var(--color-ink)" />
               <span className={styles.keyPointLabel}>{kp.label}</span>
             </div>
           ))}
@@ -133,7 +137,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           <div className={styles.sideCta}>
             <p className={`font-cormorant ${styles.sideCtaHeading}`}>Book a Session</p>
             <p className={styles.sideCtaText}>Ready to take the next step? Book a consultation with our specialists today.</p>
-            <a href="/#book" className={styles.sideCtaButton}>Book Appointment</a>
+            <BookingButton className={styles.sideCtaButton}>Book Appointment</BookingButton>
             <a href="/services" className={styles.sideCtaSecondary}>← All Services</a>
           </div>
 
@@ -148,7 +152,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             Our multidisciplinary team is ready to assess, guide, and support your child&apos;s unique journey.
           </p>
           <div className={styles.ctaButtons}>
-            <a href="/#book" className={styles.ctaButtonPrimary}>Book an Appointment</a>
+            <BookingButton className={styles.ctaButtonPrimary}>Book an Appointment</BookingButton>
             <a href="/contact" className={styles.ctaButtonSecondary}>Get in Touch</a>
           </div>
         </div>
@@ -161,7 +165,9 @@ export default async function ServiceDetailPage({ params }: Props) {
           <div className={styles.relatedGrid}>
             {related.map((rel) => (
               <Link key={rel.id} href={`/services/${rel.id}`} className={styles.relatedCard}>
-                <span className={`material-symbols-rounded ${styles.relatedEmoji}`}>{rel.emoji}</span>
+                <div className={styles.relatedEmoji}>
+                  <DynamicIcon name={rel.emoji} size={28} color="var(--color-peach)" />
+                </div>
                 <h3 className={`font-cormorant ${styles.relatedTitle}`}>{rel.title}</h3>
                 <p className={styles.relatedDesc}>{rel.shortDescription}</p>
                 <span className={styles.relatedCta}>Learn more →</span>

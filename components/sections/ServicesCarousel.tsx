@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import Link from "next/link";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import styles from "./ServicesCarousel.module.css";
 
 type Service = (typeof import("@/data/services.json"))[number];
@@ -147,13 +148,20 @@ export default function ServicesCarousel({ services }: ServicesCarouselProps) {
   if (isMobile) {
     return (
       <div className={styles.mobileList}>
+        <div style={{ marginBottom: "2rem", textAlign: "center" }}>
+          <h2 className={`font-cormorant`} style={{ fontSize: "2.5rem", color: "var(--color-ink)" }}>
+            Our Clinical Services
+          </h2>
+        </div>
         {safeServices.map((service) => (
           <Link
             key={service.id}
             href={`/services/${service.id}`}
             className={styles.mobileCard}
           >
-            <p className={`material-symbols-rounded ${styles.mobileEmoji}`}>{service.emoji}</p>
+            <div className={styles.mobileEmoji}>
+              <DynamicIcon name={service.emoji} size={28} color="var(--color-ink)" />
+            </div>
             <h3 className={`font-cormorant ${styles.mobileTitle}`}>{service.title}</h3>
             <p className={styles.mobileDescription}>{service.shortDescription}</p>
           </Link>
@@ -375,9 +383,14 @@ export default function ServicesCarousel({ services }: ServicesCarouselProps) {
                 textDecoration: "none",
               }}
             >
-              <p className={`material-symbols-rounded ${item.isActive ? styles.activeEmoji : styles.sideEmoji}`}>
-                {item.service.emoji}
-              </p>
+              <div className={item.isActive ? styles.activeEmoji : styles.sideEmoji}>
+                <DynamicIcon
+                  name={item.service.emoji}
+                  size={item.isActive ? 48 : 24}
+                  color={item.isActive ? "var(--color-peach)" : "var(--color-ink-soft)"}
+                  strokeWidth={item.isActive ? 1.5 : 2}
+                />
+              </div>
               {item.isActive ? (
                 <>
                   <h3 className={`font-cormorant ${styles.activeTitle}`}>{item.service.title}</h3>

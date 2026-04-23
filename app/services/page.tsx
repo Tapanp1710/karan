@@ -1,8 +1,11 @@
 import Link from "next/link";
 import { getData } from "@/lib/getData";
+import DynamicIcon from "@/components/ui/DynamicIcon";
+import BookingButton from "@/components/ui/BookingButton";
 import styles from "./page.module.css";
 
 type ServicesData = typeof import("@/data/services.json");
+type Service = (typeof import("@/data/services.json"))[number];
 
 export const metadata = {
   title: "Our Services | Vathsalya CNNC",
@@ -33,7 +36,7 @@ export default async function ServicesPage() {
             className={styles.card}
           >
             <div className={styles.cardTop}>
-              <span className={`material-symbols-rounded ${styles.emoji}`}>{service.emoji}</span>
+              <DynamicIcon name={service.emoji} size={32} color="var(--color-ink)" />
             </div>
             <div className={styles.cardBody}>
               <h2 className={`font-cormorant ${styles.title}`}>{service.title}</h2>
@@ -54,9 +57,9 @@ export default async function ServicesPage() {
         <p className={styles.bottomCtaText}>
           Book a consultation and our specialists will guide you to the right service for your child.
         </p>
-        <a href="/#book" className={styles.bottomCtaButton}>
+        <BookingButton className={styles.bottomCtaButton}>
           Book a Free Consultation
-        </a>
+        </BookingButton>
       </div>
 
     </main>

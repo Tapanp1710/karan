@@ -70,6 +70,7 @@
     flex-direction: row;
     gap: 0.75rem;
   }
+
   .item {
     flex: 1;
   }

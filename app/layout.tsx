@@ -3,12 +3,15 @@ import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import siteDataStatic from "@/data/site.json";
 import { getData } from "@/lib/getData";
+import { BookingProvider } from "@/context/BookingContext";
+import BookingModal from "@/components/ui/BookingModal";
 import "./globals.css";
 import styles from "./layout.module.css";
 
 export const metadata: Metadata = {
   title: siteDataStatic.metadataTitle,
   description: siteDataStatic.seoDescription,
+  viewport: "width=device-width, initial-scale=1",
   openGraph: {
     title: siteDataStatic.metadataTitle,
     description: siteDataStatic.seoDescription,
@@ -30,11 +33,14 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={styles.body}>
-        <div className={styles.appShell}>
-          <Navbar siteData={siteData} contactData={contactData} servicesData={servicesData} />
-          <main>{children}</main>
-          <Footer siteData={siteData} contactData={contactData} />
-        </div>
+        <BookingProvider>
+          <div className={styles.appShell}>
+            <Navbar siteData={siteData} contactData={contactData} servicesData={servicesData} />
+            <main>{children}</main>
+            <Footer siteData={siteData} contactData={contactData} />
+            <BookingModal siteData={siteData} contactData={contactData} servicesData={servicesData} />
+          </div>
+        </BookingProvider>
       </body>
     </html>
   );
