@@ -26,7 +26,7 @@ export default function CircleOfCareClient({ data }: CircleOfCareProps) {
 
   // Dynamic coordinates based on container sizes in CSS
   // We'll use these to calculate offsets from the center (50%, 50%)
-  const radius = isSmallMobile ? 120 : isTablet ? 145 : 280;
+  const radius = isSmallMobile ? 120 : isTablet ? 145 : 220;
 
   return (
     <section className={styles.section}>
@@ -84,7 +84,7 @@ export default function CircleOfCareClient({ data }: CircleOfCareProps) {
               <div className={styles.circleCenter}>
                 <div className={styles.centerImagePlaceholder}>
                   <Image
-                    src="/images/hero/hero-1.png"
+                    src="/images/hero/360-circle.jpeg"
                     alt="Circle of Care Center"
                     width={300}
                     height={300}
