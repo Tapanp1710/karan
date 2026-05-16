@@ -26,8 +26,7 @@ const INITIAL_FORM: BookingForm = {
 
 export default function BookAppointment() {
   const [formData, setFormData] = useState<BookingForm>(INITIAL_FORM);
-  const [showToast, setShowToast] = useState(false);
-
+  const [showModal, setShowModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const serviceTitles = useMemo(() => servicesData.map((service) => service.title), []);
@@ -65,9 +64,10 @@ export default function BookAppointment() {
       const result = await response.json();
 
       if (result.success) {
-        setShowToast(true);
+        setShowModal(true);
         setFormData(INITIAL_FORM);
-        window.setTimeout(() => setShowToast(false), 5000);
+        // Auto close modal after 5 seconds
+        window.setTimeout(() => setShowModal(false), 5000);
       } else {
         alert("Something went wrong. Please try again later.");
       }
@@ -160,16 +160,34 @@ export default function BookAppointment() {
         <button
           type="submit"
           className={styles.submitButton}
+          disabled={isSubmitting}
         >
-          {siteData.bookingForm.submitButton}
+          {isSubmitting ? "Submitting..." : siteData.bookingForm.submitButton}
         </button>
       </form>
 
-      {showToast ? (
-        <div className={styles.toast}>
-          {siteData.bookingForm.toastSuccess}
-        </div>
-      ) : null}
+      {/* Confirmation Modal */}
+      {showModal && (
+        <>
+          <div className={styles.modalBackdrop} onClick={() => setShowModal(false)} />
+          <div className={styles.modal}>
+            <div className={styles.modalContent}>
+              <div className={styles.modalIcon}>✓</div>
+              <h3 className={`font-cormorant ${styles.modalTitle}`}>Appointment Request Sent!</h3>
+              <p className={styles.modalMessage}>
+                Thank you for your interest. Your details have been received, and our team will get back to you shortly via email or phone.
+              </p>
+              <button
+                type="button"
+                className={styles.modalCloseButton}
+                onClick={() => setShowModal(false)}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </>
+      )}
     </section>
   );
 }

@@ -1,23 +1,28 @@
 {
-  "_note": "// TODO: Replace with real content",
+  "_note": "// Vathsalya CNNC - Hyderabad Contact Information",
   "sectionTitle": "Contact Us",
   "labels": {
     "address": "Address",
     "phone": "Phone",
     "email": "Email",
     "businessHours": "Business Hours",
-    "mapTitle": "Google Maps location placeholder"
+    "mapTitle": "Visit Vathsalya CNNC - Hyderabad"
   },
-  "address": "2nd Floor, Sunshine Plaza, JP Nagar, Bengaluru, Karnataka 560078",
-  "phone": "+91 80808 80808",
-  "email": "care@vathsalyacnnc.com",
-  "whatsapp": "+91 99000 01234",
-  "mapEmbedUrl": "https://maps.google.com/maps?q=12.9100,77.6000&z=15&output=embed",
+  "address": "Fifth Floor, F895+XRP, Above Vellanki Foods, HUDA Layout, Nallagandla, Serilingampalle (M), Telangana 500019",
+  "addressShort": "HUDA Layout, Nallagandla, Hyderabad",
+  "phone": "+91 8121515171",
+  "email": "vathsalyacnnc@outlook.com",
+  "whatsapp": "+91 8121515171",
+  "mapEmbedUrl": "https://maps.google.com/maps?q=17.3865,78.4610&z=15&output=embed",
+  "googleMapsUrl": "https://maps.app.goo.gl/vathsalya",
   "businessHours": [
     "Monday - Friday: 9:00 AM - 7:00 PM",
     "Saturday: 9:00 AM - 5:00 PM",
     "Sunday: Closed"
   ],
+  "directorName": "Dr. Srivani Palukuri, PhD",
+  "directorQualification": "Ph.D., P.G. Diploma in Clinical Research & Pharmacovigilance",
+  "contactPerson": "Karan",
   "socialLinks": {
     "instagram": "https://instagram.com/vathsalyacnnc",
     "facebook": "https://facebook.com/vathsalyacnnc",

@@ -79,10 +79,19 @@ const ITEMS: LegalItem[] = [
 ];
 
 export default function FooterLegal() {
-  const [open, setOpen] = useState<string | null>(null);
+  const [open, setOpen] = useState<Set<string>>(new Set());
 
-  const toggle = (title: string) =>
-    setOpen((prev) => (prev === title ? null : title));
+  const toggle = (title: string) => {
+    setOpen((prev) => {
+      const newSet = new Set(prev);
+      if (newSet.has(title)) {
+        newSet.delete(title);
+      } else {
+        newSet.add(title);
+      }
+      return newSet;
+    });
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -91,20 +100,20 @@ export default function FooterLegal() {
           <button
             className={styles.trigger}
             onClick={() => toggle(title)}
-            aria-expanded={open === title}
+            aria-expanded={open.has(title)}
           >
             <span>{title}</span>
-            <span className={`${styles.chevron} ${open === title ? styles.chevronOpen : ""}`}>
+            <span className={`${styles.chevron} ${open.has(title) ? styles.chevronOpen : ""}`}>
               ▾
             </span>
           </button>
-          {open === title && (
+          {open.has(title) ? (
             <div className={styles.panel}>
               {content.trim().split("\n\n").map((para, i) => (
                 <p key={i} className={styles.para}>{para}</p>
               ))}
             </div>
-          )}
+          ) : null}
         </div>
       ))}
     </div>

@@ -1,15 +1,16 @@
 {
-  "_note": "// Restored original text",
+  "_note": "// Vathsalya Child Neuro & Nurture Center - Hyderabad",
   "clinicName": "Vathsalya Child Neuro & Nurture Center",
   "brandPrefix": "Vathsalya",
   "brandHighlight": "CNNC",
-  "tagline": "Nurturing every child with compassionate, evidence-based care.",
+  "tagline": "Everything your child needs to grow, adapt, and thrive thoughtfully brought together in one place.",
+  "taglineExpanded": "Evidence-based therapy, developmental care, and structured family guidance for neurodivergent children.",
   "logoPath": "/logo.png",
   "favicon": "/favicon.ico",
   "ogImage": "/images/hero/hero-1.jpg",
-  "metadataTitle": "Vathsalya CNNC | Child Development and Therapy Center",
-  "seoDescription": "Vathsalya CNNC provides pediatric developmental support, therapy services, and family-centered care.",
-  "whatsAppNumber": "+919900001234",
+  "metadataTitle": "Vathsalya CNNC | Neurodivergent Children Care Clinic in Hyderabad",
+  "seoDescription": "Vathsalya CNNC is a leading neurodivergent children care clinic in Hyderabad offering developmental pediatrics, speech therapy, occupational therapy, and comprehensive care for children with autism, ADHD, and developmental delays.",
+  "whatsAppNumber": "+918121515171",
   "sectionTitles": {
     "services": "Our Clinical Services",
     "team": "Our Team",
@@ -48,8 +49,8 @@
     },
     "submitButton": "Book Appointment",
     "toastSuccess": "Booking request sent successfully! We will contact you soon.",
-    "web3FormsAccessKey": "YOUR_ACCESS_KEY_HERE",
-    "recipientEmail": "care@vathsalyacnnc.com",
+    "web3FormsAccessKey": "ORIGINAL_ACCESS_KEY",
+    "recipientEmail": "vathsalyacnnc@outlook.com",
     "messageTemplate": {
       "title": "booking appointment from vathsalya website",
       "fullName": "Full Name",
@@ -71,16 +72,34 @@
       "href": "/services"
     },
     {
+      "label": "About",
+      "href": "/about"
+    },
+    {
       "label": "Gallery",
       "href": "/gallery"
     },
     {
       "label": "Contact",
       "href": "/contact"
-    },
-    { 
-      "label": "About",
-      "href": "/about"
     }
+  ],
+  "vision": "To help children thrive, grow in independence, and shine in their own way. Vathsalya envisages bringing clinicians, therapists, educators, and parents into close collaboration—ensuring that interventions remain effective well beyond the therapy setting. This integrated approach combines therapy with education and life skills, focusing on discovering and nurturing each child's unique abilities so they can flourish with greater independence.",
+  "mission": "Vathsalya Child Neuronurture Centre creates individualized, holistic circles of care that support each child's developmental journey while strengthening family confidence. We channel clinical excellence and evidence-based expertise into compassionate services for neurodivergent children and their families, bridging research-backed interventions with real-world family support.",
+  "values": [
+    "Compassion at the heart of every interaction",
+    "Thoughtful, evidence-based care with clear goals",
+    "Working alongside families, bridging gaps with transparency and trust"
+  ],
+  "keywords": [
+    "neurodivergent children care clinic",
+    "speech therapy for children",
+    "occupational therapy",
+    "physiotherapy",
+    "developmental pediatrics",
+    "autism support",
+    "ADHD therapy",
+    "developmental delay",
+    "Hyderabad"
   ]
 }

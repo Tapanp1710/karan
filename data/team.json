@@ -1,24 +1,23 @@
 [
   {
-    "_note": "// TODO: Replace with real content",
-    "name": "Dr. Ananya Rao",
-    "role": "Developmental Pediatrician",
-    "qualification": "MD Pediatrics, Fellowship in Developmental Medicine",
-    "bio": "Dr. Ananya leads interdisciplinary case planning and focuses on early diagnosis and long-term developmental follow-up.",
-    "imagePath": "/images/team/placeholder.jpg"
+    "name": "Dr. Srivani Palukuri, PhD",
+    "role": "Founder & Director",
+    "qualification": "PhD, Clinical Researcher",
+    "bio": "Dr. Srivani is a seasoned clinical researcher with over a decade of experience in national and multinational pharmaceutical organizations. She has led and managed clinical trials addressing medicines for unmet needs, with a focus on making affordable solutions accessible across diverse indications. In her corporate career, she worked across India, Europe, and the US, contributing impactful publications and communications to the scientific community.\n\nToday, she channels this expertise into evidence-based, compassionate services for neurodivergent children and their families through Vathsalya Child Neuronurture Centre—bridging clinical excellence with compassionate care.\n\nHer focus on neurodiversity grew from personal experience: after her son was diagnosed with mild autism spectrum disorder with associated delays in speech and social communication, she became determined to create an inclusive environment where children with special needs can learn and flourish according to their individual strengths. Her vision is to nurture children so they develop the physical, social, emotional, and practical skills needed to become self-reliant and confident adults.",
+    "imagePath": "/images/team/image1.jpg"
   },
   {
-    "name": "Mr. Rohan Mehta",
-    "role": "Senior Occupational Therapist",
-    "qualification": "MOT, Certified Sensory Integration Practitioner",
-    "bio": "Rohan works with children on sensory processing, motor planning, and self-help routines for better day-to-day functioning.",
-    "imagePath": "/images/team/placeholder.jpg"
+    "name": "Dr. Mrudula Srikanth, PT",
+    "role": "Child Physiotherapist",
+    "qualification": "Certified Physiotherapist, 14+ years clinical experience",
+    "bio": "Dr. Mrudula is a Certified Physiotherapist with over 14 years of clinical experience in musculoskeletal rehabilitation, post-operative recovery, sports injury management, paediatric physiotherapy, and early childhood development. She specialises in creating personalised, evidence-based therapy programmes aimed at improving mobility, recovery, motor skills, functional independence, and overall physical wellbeing across all age groups.\n\nWith a compassionate and patient-centred approach, Dr. Mrudula is dedicated to delivering effective rehabilitation outcomes through strong clinical expertise, excellent communication, and holistic care. Her passion for health and wellness enables her to support patients in achieving improved quality of life and long-term physical health.",
+    "imagePath": "/images/team/image2.jpg"
   },
   {
-    "name": "Ms. Isha Nair",
-    "role": "Speech and Language Therapist",
-    "qualification": "MASLP, Pediatric Communication Specialist",
-    "bio": "Isha supports children in language development, articulation, and social communication through play-based intervention.",
-    "imagePath": "/images/team/placeholder.jpg"
+    "name": "Tania Joe",
+    "role": "Child Psychologist",
+    "qualification": "Master's in Psychology and Wellbeing (Dublin)",
+    "bio": "Tania Joe holds a Master's degree in Psychology and Wellbeing from Dublin and brings valuable experience across multidisciplinary healthcare, psychological services, and child development settings. Her professional background includes working in collaborative healthcare environments with a focus on psychological support, special education, developmental assessment, clinical documentation, and multidisciplinary care coordination.\n\nShe has experience supporting children and families through family-centred approaches, with particular interests in child psychology, developmental disorders, behavioural support, and early intervention.",
+    "imagePath": "/images/team/image3.jpg"
   }
 ]

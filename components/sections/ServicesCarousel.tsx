@@ -307,55 +307,7 @@ export default function ServicesCarousel({ services }: ServicesCarouselProps) {
             />
           </div>
 
-          <div style={{
-            position: "absolute",
-            right: "-18px",
-            top: "50%",
-            transform: "translateY(-50%)",
-            display: "flex",
-            flexDirection: "column",
-            gap: "10px",
-            zIndex: 30,
-          }}>
-            <button type="button" aria-label="Previous service" onClick={() => rotateBy(-1)}
-              style={{
-                width: 36,
-                height: 36,
-                borderRadius: "50%",
-                background: "var(--color-peach)",
-                color: "white",
-                border: "none",
-                cursor: "pointer",
-                fontSize: "1rem",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: 2,
-              }}
-            >
-              <ChevronUp size={18} color="white" />
-              <span style={{ fontSize: "0.65rem", lineHeight: 1 }}>⬆️</span>
-            </button>
-            <button type="button" aria-label="Next service" onClick={() => rotateBy(1)}
-              style={{
-                width: 36,
-                height: 36,
-                borderRadius: "50%",
-                background: "var(--color-peach)",
-                color: "white",
-                border: "none",
-                cursor: "pointer",
-                fontSize: "1rem",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: 2,
-              }}
-            >
-              <ChevronDown size={18} color="white" />
-              <span style={{ fontSize: "0.65rem", lineHeight: 1 }}>⬇️</span>
-            </button>
-          </div>
+
         </div>
       </div>
 
@@ -413,9 +365,38 @@ export default function ServicesCarousel({ services }: ServicesCarouselProps) {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        gap: "6px",
+        gap: "24px",
       }}>
-        <span style={{
+        <button 
+          type="button" 
+          aria-label="Previous service" 
+          onClick={() => rotateBy(-1)}
+          style={{
+            width: 60,
+            height: 60,
+            borderRadius: "50%",
+            background: "var(--color-peach)",
+            color: "white",
+            border: "none",
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            transition: "all 0.3s ease",
+            boxShadow: "0 4px 16px rgba(207, 155, 126, 0.3)",
+          }}
+          onMouseEnter={(e) => {
+            (e.currentTarget as HTMLButtonElement).style.transform = "scale(1.1)";
+            (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 8px 24px rgba(207, 155, 126, 0.5)";
+          }}
+          onMouseLeave={(e) => {
+            (e.currentTarget as HTMLButtonElement).style.transform = "scale(1)";
+            (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 4px 16px rgba(207, 155, 126, 0.3)";
+          }}
+        >
+          <ChevronUp size={32} color="white" strokeWidth={3} />
+        </button>
+        <div style={{
           fontFamily: "Cormorant Garamond",
           fontSize: "3.5rem",
           fontWeight: "300",
@@ -424,7 +405,7 @@ export default function ServicesCarousel({ services }: ServicesCarouselProps) {
           transition: "all 0.7s cubic-bezier(0.34, 1.56, 0.64, 1)",
         }}>
           {String(activeIndex + 1).padStart(2, "0")}
-        </span>
+        </div>
         <span style={{
           width: "1px",
           height: "48px",
@@ -439,6 +420,41 @@ export default function ServicesCarousel({ services }: ServicesCarouselProps) {
         }}>
           {String(services.length).padStart(2, "0")}
         </span>
+        <span style={{
+          width: "1px",
+          height: "48px",
+          background: "linear-gradient(to top, var(--color-peach), var(--color-taupe))",
+          display: "block",
+        }} />
+        <button 
+          type="button" 
+          aria-label="Next service" 
+          onClick={() => rotateBy(1)}
+          style={{
+            width: 60,
+            height: 60,
+            borderRadius: "50%",
+            background: "var(--color-peach)",
+            color: "white",
+            border: "none",
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            transition: "all 0.3s ease",
+            boxShadow: "0 4px 16px rgba(207, 155, 126, 0.3)",
+          }}
+          onMouseEnter={(e) => {
+            (e.currentTarget as HTMLButtonElement).style.transform = "scale(1.1)";
+            (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 8px 24px rgba(207, 155, 126, 0.5)";
+          }}
+          onMouseLeave={(e) => {
+            (e.currentTarget as HTMLButtonElement).style.transform = "scale(1)";
+            (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 4px 16px rgba(207, 155, 126, 0.3)";
+          }}
+        >
+          <ChevronDown size={32} color="white" strokeWidth={3} />
+        </button>
       </div>
     </section>
   );

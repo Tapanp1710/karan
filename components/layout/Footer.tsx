@@ -62,7 +62,7 @@ export default function Footer({ siteData, contactData }: FooterProps) {
               alt="Vathsalya CNNC"
               width={120}
               height={45}
-              style={{ objectFit: "contain" }}
+              style={{ objectFit: "contain", width: "auto", height: "auto" }}
             />
           </div>
           <p className={styles.tagline}>{siteData.tagline}</p>

@@ -53,6 +53,7 @@ export default function Navbar({ siteData, contactData, servicesData }: NavbarPr
               alt="Vathsalya CNNC"
               width={140}
               height={140}
+              loading="eager"
               style={{
                 height: "56px",
                 width: "auto",

@@ -1,31 +1,44 @@
 [
   {
-    "_note": "// TODO: Replace with real content",
-    "name": "Neha S.",
-    "childAge": "4 years",
+    "name": "Akshika Tekriwal",
+    "childAge": "Child with speech delay",
     "service": "Speech Therapy",
-    "quote": "We noticed clear improvement in communication within weeks. The therapist also taught us what to do at home.",
+    "quote": "My child's speech improved significantly at Ananya child development center. The dedicated skilled therapists help set up a friendly environment working with the child to achieve the goals. The wholistic approach makes all the difference. Highly recommended!",
     "rating": 5
   },
   {
-    "name": "Amit R.",
-    "childAge": "6 years",
-    "service": "Occupational Therapy",
-    "quote": "Our child is more independent with daily tasks and school routines. The sessions are practical and encouraging.",
+    "name": "Ankit Patel",
+    "childAge": "Child with communication delay",
+    "service": "Speech Therapy & Development",
+    "quote": "The Speech Therapy Centre has truly worked magically for my kid's therapy. Their communication skill program has made remarkable improvement. Speech is a part of overall development and therapists focus on that holistically. Very grateful to the entire team.",
     "rating": 5
   },
   {
-    "name": "Shreya P.",
-    "childAge": "3 years",
-    "service": "Early Intervention",
-    "quote": "The team gave us a clear roadmap and regular feedback. We felt supported through every step.",
-    "rating": 4
+    "name": "Pulok Dhar",
+    "childAge": "Child with multiple needs",
+    "service": "Occupational Therapy & Speech Therapy",
+    "quote": "The combo of Occupational Therapy and Speech Therapy is paying off beautifully. Big improvements in my child's abilities. Each session is well-tailored and super effective. Best therapy centre in Nallagandla.",
+    "rating": 5
   },
   {
-    "name": "Karan T.",
-    "childAge": "7 years",
-    "service": "Behavior Therapy",
-    "quote": "The behavior strategies were simple to follow and made a big difference at home and in class.",
+    "name": "Prashant Prajapati",
+    "childAge": "Child with autism",
+    "service": "Autism Therapy (Multi-therapy)",
+    "quote": "Autism Therapy at Ananya is a combination of three integrated therapies. Their approach helps children in every aspect—communication, behavior, and daily tasks. The interconnected therapy model is truly transformative for our family.",
+    "rating": 5
+  },
+  {
+    "name": "Kavya Arunachalam",
+    "childAge": "Child with autism & speech delay",
+    "service": "Comprehensive Care",
+    "quote": "Ananya has helped my child tremendously. We've seen so much improvement within five months. The team is caring, patient, and answers all our queries. Eye contact improved significantly and most symptoms have resolved. Grateful beyond words.",
+    "rating": 5
+  },
+  {
+    "name": "Ahiron Handique",
+    "childAge": "Child with behavioral challenges",
+    "service": "Behavioral & Comprehensive Therapy",
+    "quote": "Therapy at Ananya has transformed my son profoundly. The positive change in his behaviour is remarkable. The team is incredibly supportive, providing regular updates and thoughtful guidance throughout the journey.",
     "rating": 5
   }
 ]

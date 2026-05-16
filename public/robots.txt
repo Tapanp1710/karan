@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Allow crawling of key pages
+Allow: /services
+Allow: /about
+Allow: /contact
+Allow: /gallery
+
+# Sitemap location
+Sitemap: https://vathsalyacnnc.com/sitemap.xml
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

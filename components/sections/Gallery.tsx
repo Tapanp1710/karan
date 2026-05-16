@@ -13,7 +13,7 @@ export default async function Gallery() {
   return (
     <section className={styles.section} id="gallery">
       <h2 className={`font-cormorant ${styles.heading}`}>{siteData.sectionTitles.gallery}</h2>
-      <GalleryClient items={gallery} allFilterLabel={siteData.gallery.allFilterLabel} />
+      <GalleryClient items={gallery} />
     </section>
   );
 }
