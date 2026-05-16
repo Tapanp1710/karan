@@ -14,7 +14,6 @@ export default async function About() {
           <h2 className={`font-cormorant ${styles.heading}`}>{about.heading}</h2>
           <p className={styles.mission}>{about.mission}</p>
           <p className={styles.vision}>{about.vision}</p>
-          <p className={styles.founded}>{about.foundedPrefix} {about.foundedYear}</p>
 
           <div className={styles.descriptionList}>
             {about.description.map((paragraph, index) => (
@@ -33,15 +32,6 @@ export default async function About() {
                 <li key={value.text} className={styles.valueItem}>
                   <span className={styles.valueIcon}>{value.icon}</span>
                   <span className={styles.valueText}>{value.text}</span>
-                </li>
-              ))}
-            </ul>
-
-            <h3 className={`font-cormorant ${styles.statsHeading}`}>{about.statsHeading}</h3>
-            <ul className={styles.statsList}>
-              {about.stats.map((stat) => (
-                <li key={stat} className={styles.statItem}>
-                  {stat}
                 </li>
               ))}
             </ul>
