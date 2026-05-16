@@ -2,33 +2,29 @@
   "_note": "// TODO: Replace with real content",
   "eyebrow": "About Us",
   "heading": "Our Mission and Vision",
-  "foundedPrefix": "Founded in",
   "valuesHeading": "Our Values",
-  "statsHeading": "At a Glance",
   "mission": "To provide accessible, child-centered developmental care that empowers every family.",
   "vision": "To become the most trusted center for pediatric developmental support in the region.",
-  "foundedYear": 2018,
   "description": [
     "Vathsalya CNNC was founded with a mission to bridge clinical expertise and compassionate care. Our interdisciplinary team works closely with families to understand each child's strengths and challenges.",
     "From early intervention to long-term developmental support, we create practical, individualized plans that improve outcomes at home, in school, and in social environments."
   ],
   "values": [
     {
-      "icon": "❤️",
-      "text": "Compassion in every interaction"
+      "icon": "★",
+      "text": "Trust\nTransparent communication and dependable, consistent care"
     },
     {
-      "icon": "🎯",
-      "text": "Evidence-based and goal-oriented therapy"
+      "icon": "▲",
+      "text": "Optimism\nBelief in progress, guided by steady growth"
     },
     {
-      "icon": "🤝",
-      "text": "Family partnership and transparency"
+      "icon": "♥",
+      "text": "Compassion\nCare that listens, understands, and supports"
+    },
+    {
+      "icon": "◆",
+      "text": "Integrity\nHonest guidance, without compromise or shortcuts"
     }
-  ],
-  "stats": [
-    "500+ Children Helped",
-    "10+ Specialized Programs",
-    "95% Parent Satisfaction"
   ]
 }
