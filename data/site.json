@@ -49,8 +49,8 @@
     },
     "submitButton": "Book Appointment",
     "toastSuccess": "Booking request sent successfully! We will contact you soon.",
-    "web3FormsAccessKey": "3f91964a-3597-4d71-8cdb-48a5c3112905",
-    "recipientEmail": "vathsalyacnnc@outlook.com",
+    "web3FormsAccessKey": "dfc8eaee-24cb-44a5-ab57-07e9a8b8f849",
+    "recipientEmail": "contactus@vathsalya.co.in",
     "messageTemplate": {
       "title": "booking appointment from vathsalya website",
       "fullName": "Full Name",
