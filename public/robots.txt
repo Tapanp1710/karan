@@ -10,7 +10,7 @@ Allow: /contact
 Allow: /gallery
 
 # Sitemap location
-Sitemap: https://vathsalyacnnc.com/sitemap.xml
+Sitemap: https://vathsalya.co.in/sitemap.xml
 
 # Specific rules for search engines
 User-agent: Googlebot
