@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://vathsalya.co.in';
+  // NOTE: must match your live canonical domain. Confirm www vs non-www.
+  const baseUrl = 'https://www.vathsalya.co.in';
   const lastModified = new Date().toISOString().split('T')[0];
 
   return [
@@ -13,6 +14,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/services`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/early-learning-centre`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/bridge-program`,
       lastModified,
       changeFrequency: 'monthly',
       priority: 0.9,

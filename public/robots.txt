@@ -3,18 +3,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /private/
 
-# Allow crawling of key pages
-Allow: /services
-Allow: /about
-Allow: /contact
-Allow: /gallery
-
-# Sitemap location
-Sitemap: https://vathsalya.co.in/sitemap.xml
-
-# Specific rules for search engines
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
+Sitemap: https://www.vathsalya.co.in/sitemap.xml
