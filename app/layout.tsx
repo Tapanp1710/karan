@@ -53,7 +53,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={styles.body}>
-        <JsonLD />
+        <JsonLd />
         <BookingProvider>
           <div className={styles.appShell}>
             <Navbar siteData={siteData} contactData={contactData} servicesData={servicesData} />
