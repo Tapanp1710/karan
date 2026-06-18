@@ -47,6 +47,9 @@ export default async function EarlyLearningCentre() {
         stages={elc.stages}
         alignmentNote={elc.alignmentNote}
         ctaLabel={elc.ctaLabel}
+        bookingTitle={elc.booking.title}
+        serviceLabel={elc.booking.serviceLabel}
+        serviceOptions={elc.booking.options}
       />
 
       {/* Admissions / 30-month logic */}
@@ -60,3 +63,4 @@ export default async function EarlyLearningCentre() {
     </section>
   );
 }
+

@@ -6,6 +6,12 @@ export type BookingOptions = {
   presetService?: string;
   /** Hide the Service dropdown (used when the service is already known). */
   hideService?: boolean;
+  /** Replace the full services list with a custom set of options. */
+  serviceOptions?: string[];
+  /** Override the Service field label (e.g. "Programme of interest"). */
+  serviceLabel?: string;
+  /** Override the modal title (e.g. "Book a Visit"). */
+  title?: string;
 };
 
 type BookingContextType = {

@@ -20,6 +20,9 @@ type Props = {
   stages: readonly Stage[];
   alignmentNote: string;
   ctaLabel: string;
+  bookingTitle?: string;
+  serviceLabel?: string;
+  serviceOptions?: string[];
 };
 
 const ICONS: Record<string, LucideIcon> = {
@@ -31,7 +34,14 @@ const ICONS: Record<string, LucideIcon> = {
   habits: Sparkles,
 };
 
-export default function EarlyLearningCentreClient({ stages, alignmentNote, ctaLabel }: Props) {
+export default function EarlyLearningCentreClient({
+  stages,
+  alignmentNote,
+  ctaLabel,
+  bookingTitle,
+  serviceLabel,
+  serviceOptions,
+}: Props) {
   const [active, setActive] = useState(0);
   const { openBooking } = useBooking();
   const stage = stages[active];
@@ -96,10 +106,21 @@ export default function EarlyLearningCentreClient({ stages, alignmentNote, ctaLa
 
       <div className={styles.footBand}>
         <p className={styles.alignNote}>{alignmentNote}</p>
-        <button type="button" className={styles.ctaButton} onClick={openBooking}>
+        <button
+          type="button"
+          className={styles.ctaButton}
+          onClick={() =>
+            openBooking({
+              title: bookingTitle,
+              serviceLabel: serviceLabel,
+              serviceOptions: serviceOptions,
+            })
+          }
+        >
           {ctaLabel}
         </button>
       </div>
     </div>
   );
 }
+

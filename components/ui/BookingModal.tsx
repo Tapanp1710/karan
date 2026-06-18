@@ -41,21 +41,28 @@ export default function BookingModal({ siteData, contactData, servicesData }: Bo
 
   const serviceTitles = useMemo(() => servicesData.map((service) => service.title), [servicesData]);
 
-  // When the modal is opened with a preset service, pre-fill it.
+  // On open: pre-fill a preset service if given, otherwise clear it
+  // (so a selection from one context never carries into another).
   useEffect(() => {
-    if (isBookingOpen && bookingOptions.presetService) {
+    if (!isBookingOpen) return;
+    if (bookingOptions?.presetService) {
       setFormData((prev) => ({ ...prev, service: bookingOptions.presetService as string }));
+    } else {
+      setFormData((prev) => ({ ...prev, service: "" }));
     }
   }, [isBookingOpen, bookingOptions]);
 
-  const hideService = Boolean(bookingOptions.hideService);
-  const modalTitle = hideService ? "Book a Free Assessment" : siteData.sectionTitles.book;
+  const hideService = Boolean(bookingOptions?.hideService);
+  const serviceOptions = bookingOptions?.serviceOptions ?? serviceTitles;
+  const serviceLabel = bookingOptions?.serviceLabel ?? siteData.bookingForm.fields.service;
+  const modalTitle =
+    bookingOptions?.title ?? (hideService ? "Book a Free Assessment" : siteData.sectionTitles.book);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsSubmitting(true);
 
-    const serviceValue = bookingOptions.presetService ?? formData.service;
+    const serviceValue = bookingOptions?.presetService ?? formData.service;
 
     try {
       // Use Web3Forms or a similar service to send email
@@ -122,7 +129,7 @@ export default function BookingModal({ siteData, contactData, servicesData }: Bo
             </button>
           </div>
 
-          {hideService && bookingOptions.presetService ? (
+          {hideService && bookingOptions?.presetService ? (
             <p
               style={{
                 margin: "-0.25rem 0 0.5rem",
@@ -172,7 +179,7 @@ export default function BookingModal({ siteData, contactData, servicesData }: Bo
 
             {!hideService && (
               <label className={styles.fieldLabel}>
-                {siteData.bookingForm.fields.service}
+                {serviceLabel}
                 <select
                   required
                   value={formData.service}
@@ -180,7 +187,7 @@ export default function BookingModal({ siteData, contactData, servicesData }: Bo
                   className={styles.fieldControl}
                 >
                   <option value="">{siteData.bookingForm.fields.servicePlaceholder}</option>
-                  {serviceTitles.map((title) => (
+                  {serviceOptions.map((title) => (
                     <option key={title} value={title}>
                       {title}
                     </option>

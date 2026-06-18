@@ -92,5 +92,13 @@
     }
   ],
   "alignmentNote": "Our programme is mapped to India's National Curriculum Framework for the Foundational Stage (NCF-FS 2022) and the NIPUN Bharat foundational literacy & numeracy goals \u2014 so play here builds straight toward school readiness.",
-  "ctaLabel": "Book a Visit"
+  "ctaLabel": "Book a Visit",
+  "booking": {
+    "title": "Book a Visit",
+    "serviceLabel": "Programme of interest",
+    "options": [
+      "Ankuram \u2014 Toddler Play Hub (18\u201336 months)",
+      "Medha Vanam \u2014 Early Learning (30 months \u2013 6 years)"
+    ]
+  }
 }
