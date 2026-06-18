@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { getData } from "@/lib/getData";
+import BookingButton from "@/components/ui/BookingButton";
 import styles from "./Hero.module.css";
 
 type HeroData = typeof import("@/data/hero.json");
@@ -12,7 +13,6 @@ export default async function Hero() {
       <div className={styles.blob} />
       <div className={`leaf-float ${styles.leafOne}`}>🍃</div>
       <div className={`leaf-float-delayed ${styles.leafTwo}`}>🍃</div>
-
       <div className={styles.inner}>
         <div className={styles.content}>
           <p className={styles.eyebrow}>{hero.eyebrow}</p>
@@ -21,12 +21,9 @@ export default async function Hero() {
           </h1>
           <p className={styles.subheadline}>{hero.subheadline}</p>
           <div className={styles.ctaRow}>
-            <a
-              href={hero.primaryButtonLink}
-              className={styles.primaryButton}
-            >
+            <BookingButton className={styles.primaryButton}>
               {hero.primaryButtonText}
-            </a>
+            </BookingButton>
             <a
               href={hero.secondaryButtonLink}
               className={styles.secondaryButton}
@@ -35,7 +32,6 @@ export default async function Hero() {
             </a>
           </div>
         </div>
-
         <div className={styles.imageContainer}>
           <Image
             src={hero.backgroundImagePath}
@@ -50,3 +46,4 @@ export default async function Hero() {
     </section>
   );
 }
+
