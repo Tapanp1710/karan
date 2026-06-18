@@ -8,6 +8,7 @@ import BookingModal from "@/components/ui/BookingModal";
 import "./globals.css";
 import styles from "./layout.module.css";
 import JsonLd from "@/components/seo/JsonLd";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.vathsalya.co.in"),
@@ -54,6 +55,18 @@ export default async function RootLayout({
     <html lang="en">
       <body className={styles.body}>
         <JsonLd />
+	<Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-VFMQJFRJKD"
+          strategy="afterInteractive"
+        />
+        <Script id="google-gtag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VFMQJFRJKD');
+          `}
+        </Script>
         <BookingProvider>
           <div className={styles.appShell}>
             <Navbar siteData={siteData} contactData={contactData} servicesData={servicesData} />
