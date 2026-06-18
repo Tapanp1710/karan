@@ -13,7 +13,7 @@ export default function BookingButton({ children, className }: BookingButtonProp
   return (
     <button
       type="button"
-      onClick={openBooking}
+      onClick={() => openBooking()}
       className={className}
     >
       {children}
