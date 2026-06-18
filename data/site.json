@@ -71,6 +71,10 @@
       "label": "Services",
       "href": "/services"
     },
+    { 
+      "label": "Early Learning Centre", 
+      "href": "/early-learning-centre" 
+    },
     {
       "label": "About",
       "href": "/about"
