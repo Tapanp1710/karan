@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FormEvent, useMemo, useState } from "react";
+import React, { FormEvent, useEffect, useMemo, useState } from "react";
 import { useBooking } from "@/context/BookingContext";
 import styles from "./BookingModal.module.css";
 
@@ -33,7 +33,7 @@ type BookingModalProps = {
 };
 
 export default function BookingModal({ siteData, contactData, servicesData }: BookingModalProps) {
-  const { isBookingOpen, closeBooking } = useBooking();
+  const { isBookingOpen, closeBooking, bookingOptions } = useBooking();
   const [formData, setFormData] = useState<BookingForm>(INITIAL_FORM);
   const [showToast, setShowToast] = useState(false);
 
@@ -41,9 +41,21 @@ export default function BookingModal({ siteData, contactData, servicesData }: Bo
 
   const serviceTitles = useMemo(() => servicesData.map((service) => service.title), [servicesData]);
 
+  // When the modal is opened with a preset service, pre-fill it.
+  useEffect(() => {
+    if (isBookingOpen && bookingOptions.presetService) {
+      setFormData((prev) => ({ ...prev, service: bookingOptions.presetService as string }));
+    }
+  }, [isBookingOpen, bookingOptions]);
+
+  const hideService = Boolean(bookingOptions.hideService);
+  const modalTitle = hideService ? "Book a Free Assessment" : siteData.sectionTitles.book;
+
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsSubmitting(true);
+
+    const serviceValue = bookingOptions.presetService ?? formData.service;
 
     try {
       // Use Web3Forms or a similar service to send email
@@ -62,7 +74,7 @@ export default function BookingModal({ siteData, contactData, servicesData }: Bo
             `${siteData.bookingForm.messageTemplate.fullName}: ${formData.fullName}`,
             `${siteData.bookingForm.messageTemplate.phoneNumber}: ${formData.phoneNumber}`,
             `${siteData.bookingForm.messageTemplate.childAge}: ${formData.childAge}`,
-            `${siteData.bookingForm.messageTemplate.service}: ${formData.service}`,
+            `${siteData.bookingForm.messageTemplate.service}: ${serviceValue}`,
             `${siteData.bookingForm.messageTemplate.preferredDate}: ${formData.preferredDate}`,
             `${siteData.bookingForm.messageTemplate.additionalNotes}: ${
               formData.additionalNotes || siteData.bookingForm.messageTemplate.emptyNotesFallback
@@ -70,6 +82,7 @@ export default function BookingModal({ siteData, contactData, servicesData }: Bo
           ].join("\n"),
           // Include details as individual fields for better email formatting
           ...formData,
+          service: serviceValue,
         }),
       });
 
@@ -98,7 +111,7 @@ export default function BookingModal({ siteData, contactData, servicesData }: Bo
       <div className={styles.modalBackdrop} onClick={closeBooking}>
         <div className={styles.modalCard} onClick={(e) => e.stopPropagation()}>
           <div className={styles.modalHeader}>
-            <h2 className={`font-cormorant ${styles.modalTitle}`}>{siteData.sectionTitles.book}</h2>
+            <h2 className={`font-cormorant ${styles.modalTitle}`}>{modalTitle}</h2>
             <button
               type="button"
               aria-label="Close booking form"
@@ -108,6 +121,19 @@ export default function BookingModal({ siteData, contactData, servicesData }: Bo
               ✕
             </button>
           </div>
+
+          {hideService && bookingOptions.presetService ? (
+            <p
+              style={{
+                margin: "-0.25rem 0 0.5rem",
+                fontSize: "0.85rem",
+                fontWeight: 600,
+                color: "#55633a",
+              }}
+            >
+              For: {bookingOptions.presetService}
+            </p>
+          ) : null}
 
           <form className={styles.formGrid} onSubmit={handleSubmit}>
             <label className={styles.fieldLabel}>
@@ -144,22 +170,24 @@ export default function BookingModal({ siteData, contactData, servicesData }: Bo
               />
             </label>
 
-            <label className={styles.fieldLabel}>
-              {siteData.bookingForm.fields.service}
-              <select
-                required
-                value={formData.service}
-                onChange={(event) => setFormData((prev) => ({ ...prev, service: event.target.value }))}
-                className={styles.fieldControl}
-              >
-                <option value="">{siteData.bookingForm.fields.servicePlaceholder}</option>
-                {serviceTitles.map((title) => (
-                  <option key={title} value={title}>
-                    {title}
-                  </option>
-                ))}
-              </select>
-            </label>
+            {!hideService && (
+              <label className={styles.fieldLabel}>
+                {siteData.bookingForm.fields.service}
+                <select
+                  required
+                  value={formData.service}
+                  onChange={(event) => setFormData((prev) => ({ ...prev, service: event.target.value }))}
+                  className={styles.fieldControl}
+                >
+                  <option value="">{siteData.bookingForm.fields.servicePlaceholder}</option>
+                  {serviceTitles.map((title) => (
+                    <option key={title} value={title}>
+                      {title}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            )}
 
             <label className={`${styles.fieldLabel} ${styles.fullWidth}`}>
               {siteData.bookingForm.fields.preferredDate}
@@ -201,3 +229,4 @@ export default function BookingModal({ siteData, contactData, servicesData }: Bo
     </>
   );
 }
+

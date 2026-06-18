@@ -75,6 +75,10 @@
       "label": "Early Learning Centre", 
       "href": "/early-learning-centre" 
     },
+    { 
+      "label": "Bridge Program",
+      "href": "/bridge-program"
+    },
     {
       "label": "About",
       "href": "/about"
