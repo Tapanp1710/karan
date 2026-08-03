@@ -1,66 +1,66 @@
-               "use client";
+                "use client";
 
 import { useState } from "react";
 import styles from "./FooterLegal.module.css";
 
 const PRIVACY_POLICY = `Last updated: March 2026
 
-Vathsalya Child Neuro & Nurture Center ("Vathsalya CNNC", "we", "us", or "our") is committed to protecting the privacy and confidentiality of all individuals who interact with our services, including children, parents, and caregivers.
+Vathsalya Child Neuro & Nurture Center ("Vathsalya CT & ELC", "we", "us", or "our") is committed to protecting the privacy and confidentiality of all individuals who interact with our services, includi[...]
 
 1. Information We Collect
-We collect personal information that you voluntarily provide when booking appointments, filling out forms, or contacting us. This may include: full name, child's name and date of birth, contact details (phone number and email address), health and developmental history, appointment preferences, and any additional information shared during consultations.
+We collect personal information that you voluntarily provide when booking appointments, filling out forms, or contacting us. This may include: full name, child's name and date of birth, contact de[...]
 
 2. How We Use Your Information
-The information collected is used solely to: schedule and manage appointments, provide clinical assessments and therapy services, communicate with you regarding your child's care, generate clinical reports and care plans, and comply with applicable healthcare regulations and legal obligations.
+The information collected is used solely to: schedule and manage appointments, provide clinical assessments and therapy services, communicate with you regarding your child's care, generate clinica[...]
 
 3. Information Sharing & Confidentiality
-We do not sell, rent, or share your personal or clinical information with third parties without your explicit consent, except where required by law or where necessary to coordinate care with other healthcare providers involved in your child's treatment (with your consent).
+We do not sell, rent, or share your personal or clinical information with third parties without your explicit consent, except where required by law or where necessary to coordinate care with other[...]
 
 4. Data Security
-We implement appropriate technical and organisational measures to protect personal and clinical information against unauthorised access, loss, or misuse. All clinical records are stored securely and accessed only by authorised staff.
+We implement appropriate technical and organisational measures to protect personal and clinical information against unauthorised access, loss, or misuse. All clinical records are stored securely a[...]
 
 5. Children's Information
-As a paediatric healthcare provider, we handle children's health information with the highest level of care and confidentiality, in accordance with applicable child protection and healthcare privacy laws.
+As a paediatric healthcare provider, we handle children's health information with the highest level of care and confidentiality, in accordance with applicable child protection and healthcare priva[...]
 
 6. Parental Rights
-Parents or legal guardians have the right to: access their child's clinical records, request corrections to inaccurate information, withdraw consent for specific uses of information, and request deletion of data where legally permissible.
+Parents or legal guardians have the right to: access their child's clinical records, request corrections to inaccurate information, withdraw consent for specific uses of information, and request d[...]
 
 7. Communication
-By providing your contact details, you consent to receiving appointment reminders, service updates, and care-related communications. You may opt out of marketing communications at any time by contacting us.
+By providing your contact details, you consent to receiving appointment reminders, service updates, and care-related communications. You may opt out of marketing communications at any time by cont[...]
 
 8. Booking Communication
-If you use our website booking form or WhatsApp, please be aware that the respective platform's privacy policies also apply. We use these channels solely to facilitate appointment scheduling and brief communications — we do not share clinical details over these platforms.
+If you use our website booking form or WhatsApp, please be aware that the respective platform's privacy policies also apply. We use these channels solely to facilitate appointment scheduling and b[...]
 
 9. Contact Us
 For any privacy-related queries or to exercise your rights, please contact us at our registered clinic address or via the contact details listed on this website.`;
 
 const TERMS = `Last updated: March 2026
 
-By accessing this website or using any services provided by Vathsalya Child Neuro & Nurture Center ("Vathsalya CNNC"), you agree to the following terms and conditions.
+By accessing this website or using any services provided by Vathsalya Child Neuro & Nurture Center ("Vathsalya CT & ELC"), you agree to the following terms and conditions.
 
 1. Services Provided
-Vathsalya CNNC offers paediatric clinical services including developmental assessments, speech therapy, occupational therapy, physiotherapy, behaviour therapy, special education, early intervention, diagnostic screening, parent counselling, school readiness programs, group therapy, neurology follow-up, and comprehensive care planning. All services are delivered by qualified clinical professionals.
+Vathsalya CT & ELC offers paediatric clinical services including developmental assessments, speech therapy, occupational therapy, physiotherapy, behaviour therapy, special education, early interventio[...]
 
 2. Appointments & Booking
-Appointment requests made via this website or other official channels are subject to availability and confirmation. A booking is confirmed only upon explicit confirmation from our team. We reserve the right to reschedule or cancel appointments in exceptional circumstances, with reasonable notice provided.
+Appointment requests made via this website or other official channels are subject to availability and confirmation. A booking is confirmed only upon explicit confirmation from our team. We reserve[...]
 
 3. Cancellations & No-Shows
-We request at least 24 hours' notice for cancellation or rescheduling of appointments. Repeated late cancellations or no-shows may result in a cancellation fee or loss of appointment slot. This policy ensures fair access to our services for all families.
+We request at least 24 hours' notice for cancellation or rescheduling of appointments. Repeated late cancellations or no-shows may result in a cancellation fee or loss of appointment slot. This po[...]
 
 4. Information on This Website
-The content on this website is provided for general informational purposes only. It does not constitute medical advice, diagnosis, or treatment. All clinical decisions are made solely by our qualified professionals during formal assessments and consultations.
+The content on this website is provided for general informational purposes only. It does not constitute medical advice, diagnosis, or treatment. All clinical decisions are made solely by our quali[...]
 
 5. Professional Advice Disclaimer
-Nothing on this website should be taken as a substitute for professional clinical assessment. Parents and caregivers should always seek the advice of a qualified healthcare professional for concerns about their child's development or health.
+Nothing on this website should be taken as a substitute for professional clinical assessment. Parents and caregivers should always seek the advice of a qualified healthcare professional for concer[...]
 
 6. Intellectual Property
-All content on this website — including text, images, logos, and design elements — is the property of Vathsalya CNNC and may not be reproduced, distributed, or used without our prior written permission.
+All content on this website — including text, images, logos, and design elements — is the property of Vathsalya CT & ELC and may not be reproduced, distributed, or used without our prior written p[...]
 
 7. Third-Party Links
 This website may contain links to third-party websites (such as social media platforms). We are not responsible for the content or privacy practices of such sites.
 
 8. Limitation of Liability
-Vathsalya CNNC shall not be liable for any indirect, incidental, or consequential damages arising from use of this website or reliance on information contained herein.
+Vathsalya CT & ELC shall not be liable for any indirect, incidental, or consequential damages arising from use of this website or reliance on information contained herein.
 
 9. Changes to Terms
 We reserve the right to update these Terms and Conditions at any time. Changes will be published on this website and take effect immediately upon publication.

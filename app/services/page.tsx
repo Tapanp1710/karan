@@ -8,7 +8,7 @@ type ServicesData = typeof import("@/data/services.json");
 type Service = (typeof import("@/data/services.json"))[number];
 
 export const metadata = {
-  title: "Our Services | Vathsalya CNNC",
+  title: "Our Services | Vathsalya CT & ELC",
   description: "Explore all 13 child development and therapy services offered at Vathsalya Child Neuro & Nurture Center.",
 };
 
@@ -23,7 +23,7 @@ export default async function ServicesPage() {
         <p className={styles.eyebrow}>What We Offer</p>
         <h1 className={`font-cormorant ${styles.heading}`}>Our Clinical Services</h1>
         <p className={styles.subheading}>
-          Comprehensive, evidence-based care for every child&apos;s unique journey — across 13 specialised therapy and diagnostic services.
+          Comprehensive, evidence-based care for every child's unique journey — across 13 specialised therapy and diagnostic services.
         </p>
       </div>
 
