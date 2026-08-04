@@ -35,17 +35,20 @@ function SocialIcon({ href, label }: SocialLinkProps) {
     >
       {label === "instagram" ? (
         <svg viewBox="0 0 24 24" className={baseClass} aria-hidden="true">
-          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5A3.95 3.95 0 0 0 7.7[...]"
+          <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+          <circle cx="12" cy="12" r="3" fill="currentColor" />
+          <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" />
         </svg>
       ) : null}
       {label === "facebook" ? (
         <svg viewBox="0 0 24 24" className={baseClass} aria-hidden="true">
-          <path d="M13.2 22v-8.1h2.7l.5-3.2h-3.2V8.8c0-.9.3-1.6 1.7-1.6h1.8V4.3c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.2H8.2v3.2h2.5V22h2.5Z" />
+          <path d="M14.5 8H12V6.2c0-.6.4-.8.8-.8h1.2V3.2S13.8 3 12.7 3C10.8 3 9.5 4 9.5 6.1V8H7v2.9h2.5V21h3V10.9H16l.5-2.9h-2z" fill="currentColor" />
         </svg>
       ) : null}
       {label === "linkedin" ? (
         <svg viewBox="0 0 24 24" className={baseClass} aria-hidden="true">
-          <path d="M4.9 3.5A1.9 1.9 0 1 1 4.9 7.3a1.9 1.9 0 0 1 0-3.8ZM3.3 8.8h3.2V21H3.3V8.8Zm5.2 0h3v1.7h.1c.4-.8 1.5-2 3.2-2 3.4 0 4 2.2 4 5V21h-3.2v-6.4c0-1.5 0-3.5-2.1-3.5-2.1 0-2.5 1.7-2.5 3[...]/>"
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" strokeWidth="1.2" />
+          <path d="M8.5 10.5v7H6V10.5h2.5zm-1.3-3a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4zM12 10.5v7h2.5v-3.6c0-1.9 2.5-2.1 2.5 0V17.5H20v-4.6c0-4.1-4.4-3.9-5.5-1.9V10.5H12z" fill="currentColor" />
         </svg>
       ) : null}
     </a>
