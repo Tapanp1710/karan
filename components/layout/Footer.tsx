@@ -1,4 +1,7 @@
+"use client";
+
 import contactDataShape from "@/data/contact.json";
+import servicesDataShape from "@/data/services.json";
 import siteDataShape from "@/data/site.json";
 import Image from "next/image";
 import FooterLegal from "./FooterLegal";
@@ -32,7 +35,7 @@ function SocialIcon({ href, label }: SocialLinkProps) {
     >
       {label === "instagram" ? (
         <svg viewBox="0 0 24 24" className={baseClass} aria-hidden="true">
-          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5A3.95 3.95 0 0 0 7.75 20.2h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5Zm9.35 1.35a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Z" />
+          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5A3.95 3.95 0 0 0 7.7[...]"
         </svg>
       ) : null}
       {label === "facebook" ? (
@@ -42,7 +45,7 @@ function SocialIcon({ href, label }: SocialLinkProps) {
       ) : null}
       {label === "linkedin" ? (
         <svg viewBox="0 0 24 24" className={baseClass} aria-hidden="true">
-          <path d="M4.9 3.5A1.9 1.9 0 1 1 4.9 7.3a1.9 1.9 0 0 1 0-3.8ZM3.3 8.8h3.2V21H3.3V8.8Zm5.2 0h3v1.7h.1c.4-.8 1.5-2 3.2-2 3.4 0 4 2.2 4 5V21h-3.2v-6.4c0-1.5 0-3.5-2.1-3.5-2.1 0-2.5 1.7-2.5 3.4V21H8.5V8.8Z" />
+          <path d="M4.9 3.5A1.9 1.9 0 1 1 4.9 7.3a1.9 1.9 0 0 1 0-3.8ZM3.3 8.8h3.2V21H3.3V8.8Zm5.2 0h3v1.7h.1c.4-.8 1.5-2 3.2-2 3.4 0 4 2.2 4 5V21h-3.2v-6.4c0-1.5 0-3.5-2.1-3.5-2.1 0-2.5 1.7-2.5 3[...]/>"
         </svg>
       ) : null}
     </a>
@@ -59,7 +62,7 @@ export default function Footer({ siteData, contactData }: FooterProps) {
           <div className={`font-cormorant ${styles.brand}`}>
             <Image
               src="/logo.png"
-              alt="Vathsalya CNNC"
+              alt="Vathsalya CT & ELC"
               width={120}
               height={45}
               style={{ objectFit: "contain", width: "auto", height: "auto" }}
