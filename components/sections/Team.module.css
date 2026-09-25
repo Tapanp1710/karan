@@ -15,7 +15,7 @@
   margin-top: 1.5rem;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.25rem;
   position: relative;
   z-index: 0;
 }
