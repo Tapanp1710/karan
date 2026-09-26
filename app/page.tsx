@@ -2,7 +2,7 @@ import Hero from "@/components/sections/Hero";
 import CircleOfCare from "@/components/sections/CircleOfCare";
 import Services from "@/components/sections/Services";
 import Team from "@/components/sections/Team";
-import Testimonials from "@/components/sections/Testimonials";
+// import Testimonials from "@/components/sections/Testimonials";
 import FadeInSection from "@/components/ui/FadeInSection";
 import WaveDivider from "@/components/ui/WaveDivider";
 import styles from "./page.module.css";
