@@ -27,7 +27,7 @@ export default function Home() {
       </FadeInSection>
       {/* <FadeInSection> */}
         {/* <Testimonials /> */}
-      </FadeInSection>
+      {/* </FadeInSection> */}
     </div>
   );
 }
