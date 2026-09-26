@@ -25,8 +25,8 @@ export default function Home() {
       <FadeInSection>
         <Team />
       </FadeInSection>
-      <FadeInSection>
-        <Testimonials />
+      {/* <FadeInSection> */}
+        {/* <Testimonials /> */}
       </FadeInSection>
     </div>
   );
